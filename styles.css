@@ -519,6 +519,12 @@ hr {
     display: flex;
     justify-content: space-between;
 }
+
+.hr-courses {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 /* courses */
 
 /* ########### Body ########### */
