@@ -37,7 +37,7 @@ a:hover {
 
 /* Main styling for the page */
 body {
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
@@ -515,6 +515,12 @@ hr {
     justify-content: center;
 }
 
+.courses-head-img {
+    height: 20px;
+    width: auto;
+    padding-right: 5px;
+}
+
 .card-courses {
     display: flex;
     justify-content: space-between;
@@ -526,12 +532,16 @@ hr {
     font-size: 10pt;
 }
 
+.hr-courses {
+    margin: 3px 0;
+}
+
 #btn-courses {
-    background: rgb(0, 128, 60);
+    background: rgb(38, 160, 95);
 }
 
 #btn-courses:hover {
-    background: rgb(4, 101, 49);
+    background: rgb(16, 135, 72);
 }
 
 /* courses */
@@ -553,12 +563,12 @@ hr {
 
 .cell-toggle button {
     flex: 1 0 10%;
-    font-size: 13px;
+    font-size: 12px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     white-space: nowrap;
     cursor: pointer;
-    background-color: #657eaa;
+    background-color: #7693c4;
     color: white;
     border: 0;
     max-width: 100%;
@@ -566,10 +576,13 @@ hr {
     padding: 7px;
     text-transform: uppercase;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cell-toggle button:hover {
-    background-color: #405881;
+    background-color: #5d79aa;
 }
 
 .cell-toggle a {
@@ -577,7 +590,7 @@ hr {
     align-items: center;
     justify-content: center;
     flex: 1;
-    font-size: 13px;
+    font-size: 12px;
     font-family: 'Poppins', sans-serif;
     white-space: nowrap;
     cursor: pointer;
@@ -590,6 +603,12 @@ hr {
 
 .cell-toggle a:hover {
     background-color: #f0f0f0;
+}
+
+.toggle-img {
+    height: 20px;
+    width: auto;
+    margin-right: 4px;
 }
 
 .img-link {
