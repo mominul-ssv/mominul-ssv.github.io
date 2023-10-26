@@ -518,11 +518,20 @@ hr {
 .card-courses {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.hr-courses {
-    margin-top: 5px;
-    margin-bottom: 5px;
+.course-name {
+    font-size: 10pt;
+}
+
+#btn-courses {
+    background: rgb(0, 128, 60);
+}
+
+#btn-courses:hover {
+    background: rgb(4, 101, 49);
 }
 
 /* courses */
