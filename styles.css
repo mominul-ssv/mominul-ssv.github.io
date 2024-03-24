@@ -163,6 +163,7 @@ hr {
     margin: 0.5rem 0;
     border: 2px solid rgb(195, 195, 225);
     border-radius: 3px;
+    font-weight: lighter;
 }
 
 .cb-effect {
