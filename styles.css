@@ -510,19 +510,19 @@ hr {
 }
 /* certificates */
 
-/* courses */
-.courses-head {
+/* notes */
+.notes-head {
     display: flex;
     justify-content: center;
 }
 
-.courses-head-img {
+.notes-head-img {
     height: 20px;
     width: auto;
     padding-right: 5px;
 }
 
-.card-courses {
+.card-notes {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -533,19 +533,19 @@ hr {
     font-size: 10pt;
 }
 
-.hr-courses {
+.hr-notes {
     margin: 3px 0;
 }
 
-#btn-courses {
+#btn-notes {
     background: rgb(38, 160, 95);
 }
 
-#btn-courses:hover {
+#btn-notes:hover {
     background: rgb(16, 135, 72);
 }
 
-/* courses */
+/* notes */
 
 /* ########### Body ########### */
 

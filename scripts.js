@@ -42,8 +42,8 @@ document.getElementById("btn-certificates").addEventListener("click", function (
     showSection("certificates");
 });
 
-document.getElementById("btn-courses").addEventListener("click", function () {
-    showSection("courses");
+document.getElementById("btn-notes").addEventListener("click", function () {
+    showSection("notes");
 });
 
 // popup trigger
