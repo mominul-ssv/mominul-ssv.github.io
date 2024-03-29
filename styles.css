@@ -121,8 +121,6 @@ hr {
     align-items: center;
     justify-content: center;
     flex: 1;
-    font-size: 12px;
-    font-family: 'Poppins', sans-serif;
     white-space: nowrap;
     cursor: pointer;
     background-color: #ffffff;
@@ -150,7 +148,6 @@ hr {
 .src-link {
     vertical-align: middle;
     font-size: 14px;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: black;
 }
@@ -169,6 +166,18 @@ hr {
 
 .social a {
     border-radius: 0;
+}
+
+.social a:nth-child(1) {
+    border: 1px solid rgb(66 133 244);
+}
+
+.social a:nth-child(2) {
+    border: 1px solid rgb(148, 198, 66);
+}
+
+.social a:nth-child(4) {
+    border: 1px solid rgb(0, 114, 177);
 }
 
 #btn-notes {
