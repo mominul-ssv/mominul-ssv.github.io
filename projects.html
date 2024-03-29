@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Mominul Islam / মমিনুল ইসলাম</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <button onclick="goToPage('index.html')"><img class="navbar-img" src="./assets/images/navbar/img-home.png">
+                Home</button>
+            <button onclick="goToPage('publications.html')"><img class="navbar-img"
+                    src="./assets/images/navbar/img-publications.png">
+                Publications</button>
+            <button onclick="goToPage('projects.html')"><img class="navbar-img"
+                    src="./assets/images/navbar/img-projects.png">
+                Projects</button>
+            <button id="btn-notes" onclick="goToPage('notes.html')"><img class="navbar-img"
+                    src="./assets/images/navbar/img-notes.png">
+                Notes</button>
+        </div>
+    </header>
+
+    <main>
+
+        <h2 class="h2-projects">AI/ML Projects</h2>
+
+        <div class="card-body">
+            <div class="card-project">
+                <div class="project-g1">
+                    <b>Fine-Tuned the Pre-Trained T5 Transformer Model for Context-to-Question Generation</b>
+                </div>
+                <div class="project-g2">
+                    <p>Jan. 2024</p>
+                </div>
+            </div>
+            <ul>
+                <li class="card-bullet">
+                    <b>ML Domain: </b>Text Generation, Sequence-to-Sequence Modeling
+                </li>
+                <li class="card-bullet">
+                    <a href="https://www.kaggle.com/code/mominulssv/t5-small-ctx-qgen" target="_blank">
+                        <span class="blue-link">Code</span>
+                    </a>
+                    <a href="https://huggingface.co/nsu-intellisphere/t5-small-ctx-qgen" target="_blank">
+                        <span class="green-link">Model</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card-body">
+            <div class="card-project">
+                <div class="project-g1">
+                    <b>Fine-Tuned the Pre-Trained mT5 Transformer Model for Abstractive Bengali Text Summarization</b>
+                </div>
+                <div class="project-g2">
+                    <p>Jun. 2023</p>
+                </div>
+            </div>
+            <ul>
+                <li class="card-bullet">
+                    <b>ML Domain: </b>Text Summarization
+                </li>
+                <li class="card-bullet">
+                    <a href="https://github.com/mominul-ssv/mT5-text-sum-bengali" target="_blank">
+                        <span class="blue-link">Code</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card-body">
+            <div class="card-project">
+                <div class="project-g1">
+                    <b>Image-to-Image Translation via GAN to Address Class Imbalance</b>
+                </div>
+                <div class="project-g2">
+                    <p>Sep. 2022</p>
+                </div>
+            </div>
+            <ul>
+                <li class="card-bullet">
+                    <b>ML Domain: </b>Generative Adversarial Networks
+                </li>
+                <li class="card-bullet">
+                    <b>GAN Architecture: </b>Nvidia's StyleGAN2-ADA
+                </li>
+                <li class="card-bullet">
+                    <a href="https://github.com/mominul-ssv/cossif/blob/main/scripts/ISIC-2016/ISIC-2016_GAN_train.ipynb"
+                        target="_blank">
+                        <span class="blue-link">Code</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card-body">
+            <div class="card-project">
+                <div class="project-g1">
+                    <b>Skin Lesion Classification Using Cross-Stage CNNs and Transformers</b>
+                </div>
+                <div class="project-g2">
+                    <p>Aug. 2022</p>
+                </div>
+            </div>
+            <ul>
+                <li class="card-bullet">
+                    <b>ML Domain: </b>Binary & Multi-Class Image Classification
+                </li>
+                <li class="card-bullet">
+                    <b>Models: </b>ConvNeXt, Swin-Transformer, ViT
+                </li>
+                <li class="card-bullet">
+                    <a href="https://github.com/mominul-ssv/cossif/blob/main/scripts/HAM10000/HAM10000_model_train/ConvNeXt/ham10000-convnext-fagt-alpha-3.ipynb"
+                        target="_blank">
+                        <span class="blue-link">Code</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card-body">
+            <div class="card-project">
+                <div class="project-g1">
+                    <b>Heart Disease Detection Using Machine Learning</b>
+                </div>
+                <div class="project-g2">
+                    <p>Jul. 2022</p>
+                </div>
+            </div>
+            <ul>
+                <li class="card-bullet">
+                    <b>ML Domain: </b>Binary Classification
+                </li>
+                <li class="card-bullet">
+                    <b>Algorithms: </b>Logistic Regression, Random Forest, Decision Tree, KNN, Naive Bayes
+                </li>
+                <li class="card-bullet">
+                    <a href="https://github.com/mominul-ssv/heart-disease-detection/blob/main/heart-disease-detection.ipynb"
+                        target="_blank">
+                        <span class="blue-link">Code</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <h2 class="h2-projects">Web Application Projects</h2>
+
+        <div class="card-body">
+            <div class="card-project">
+                <div class="project-g1">
+                    <b>Internship Repository System</b>
+                </div>
+                <div class="project-g2">
+                    <p>May 2022</p>
+                </div>
+            </div>
+            <ul>
+                <li class="card-bullet">An internship repository web application featuring a search menu designed to
+                    catalog and showcase completed internships pursued by students across various
+                    universities and diverse companies.</li>
+                <li class="card-bullet"><b>Front-end: </b>HTML5, CSS3, Sass, JavaScript, Ajax
+                <li class="card-bullet"><b>Back-end: </b>PHP
+                <li class="card-bullet"><b>DBMS: </b>MySQL
+                </li>
+                <li class="card-bullet">
+                    <a href="https://github.com/mominul-ssv/intern-recruit-sys" target="_blank">
+                        <span class="blue-link">Code</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="img-projects">
+                <div class="popup-trigger">
+                    <p>Architecture</p>
+                    <br>
+                    <img src="./assets/images/projects/cse482/img-cse482-arch.png">
+                </div>
+                <div class="popup-trigger">
+                    <p>ERD</p>
+                    <br>
+                    <img src="./assets/images/projects/cse482/img-cse482-erd.png">
+                </div>
+                <div class="popup-trigger">
+                    <p>Login/Registration</p>
+                    <br>
+                    <img src="./assets/images/projects/cse482/img-cse482-log-reg.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <div class="card-project">
+                <div class="project-g1">
+                    <b>ScholarLink: Academic Management and Scholarship System</b>
+                </div>
+                <div class="project-g2">
+                    <p>Jan. 2022</p>
+                </div>
+            </div>
+            <ul>
+                <li class="card-bullet">ScholarLink is a helpful website that makes managing university stuff easier. It
+                    lets students sign up for courses, keep tabs on grades, and apply for scholarships online. Plus, it
+                    helps professors organize their classes better and gives university administrators more control.
+                </li>
+                <li class="card-bullet"><b>Front-end: </b>HTML5, CSS3, Bootstrap 5, JavaScript
+                <li class="card-bullet"><b>Back-end: </b>Node.js, Express.js
+                <li class="card-bullet"><b>DBMS: </b>MongoDB, Mongoose ODM
+                <li class="card-bullet">
+                    <a href="https://github.com/mominul-ssv/scholar-manage-sys" target="_blank">
+                        <span class="blue-link">Code</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="img-projects">
+                <div class="popup-trigger">
+                    <p>Schema</p>
+                    <br>
+                    <img src="./assets/images/projects/cse327/img-cse327-schema-diagram.png">
+                </div>
+                <div class="popup-trigger">
+                    <p>Login Page</p>
+                    <br>
+                    <img src="./assets/images/projects/cse327/img-cse327-login.png">
+                </div>
+                <div class="popup-trigger">
+                    <p>Student Portal</p>
+                    <br>
+                    <img src="./assets/images/projects/cse327/img-cse327-student.png">
+                </div>
+                <div class="popup-trigger">
+                    <p>Faculty Portal</p>
+                    <br>
+                    <img src="./assets/images/projects/cse327/img-cse327-faculty.png">
+                </div>
+                <div class="popup-trigger">
+                    <p>Admin Portal</p>
+                    <br>
+                    <img src="./assets/images/projects/cse327/img-cse327-admin.png">
+                </div>
+            </div>
+        </div>
+
+        <h2 class="h2-projects">Hardware Simulation Projects</h2>
+
+        <div class="card-body">
+            <div class="card-project">
+                <div class="project-g1">
+                    <b>16-bit Single Cycle RISC based Processor</b>
+                </div>
+                <div class="project-g2">
+                    <p>May 2021</p>
+                </div>
+            </div>
+            <ul>
+                <li class="card-bullet">A simulation of 16 bit single-cycle RISC based CPU including ISA, Assembler
+                    and Data-path.</li>
+                <li class="card-bullet"><b>Language: </b>Assembly Language, Python</li>
+                <li class="card-bullet"><b>Software: </b>Logisim</li>
+                <li class="card-bullet">
+                    <a href="https://github.com/mominul-ssv/16-bit-processor" target="_blank">
+                        <span class="blue-link">Code</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="img-projects">
+                <div class="popup-trigger">
+                    <p>Datapath</p>
+                    <br>
+                    <img src="./assets/images/projects/cse332/img-cse332-datapath.png">
+                </div>
+                <div class="popup-trigger">
+                    <p>Control Unit</p>
+                    <br>
+                    <img src="./assets/images/projects/cse332/img-cse332-control-unit.png">
+                </div>
+                <div class="popup-trigger">
+                    <p>Register</p>
+                    <br>
+                    <img src="./assets/images/projects/cse332/img-cse332-reg.png">
+                </div>
+                <div class="popup-trigger">
+                    <p>ALU</p>
+                    <br>
+                    <img src="./assets/images/projects/cse332/img-cse332-alu.png">
+                </div>
+            </div>
+        </div>
+
+        <!-- popup overlay -->
+        <div class="popup-overlay" id="popup">
+            <div class="popup-content">
+                <button class="popup-close" id="close-button">&times;</button>
+                <img src="" alt="Image" class="popup-image">
+            </div>
+        </div>
+        <!-- popup overlay -->
+
+        <div class="footer">
+            <div class="copyright">
+                <p>Website developed and maintained by <b>©Mominul Islam</b></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

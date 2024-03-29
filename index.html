@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,981 +12,105 @@
 </head>
 
 <body>
-    <header>
-        <div class="cell">
-            <div class="cell-left">
-                <h1>Mominul Islam / মমিনুল ইসলাম</h1>
-                <div>
-                    <div>
-                        <b>Current Affiliation: </b><a href="http://ece.northsouth.edu/" target="_blank">
-                            Department of ECE, North South University</a>
-                    </div>
-                    <div>
-                        <b>Address: </b>Plot 273, Road 1/B, Block B, Bashundhara R/A, Dhaka-1229
-                    </div>
-                    <div id="cell-last">
-                        <b>Email: </b><a href="mailto:webmaster@example.com">mominul.ivi@gmail.com</a>
-                    </div>
-                </div>
-            </div>
-            <div class="popup-trigger">
-                <img id="profile-picture" src="./assets/images/img-profile.jpg" alt="profile picture">
-            </div>
-        </div>
-        <!-- <div class="card-body">
-            <h3>About Me</h3>
-            <hr class="hr-about-me">
-            <p class="about-me">
 
+    <div class="navbar">
+        <button onclick="goToPage('index.html')"><img class="navbar-img" src="./assets/images/navbar/img-home.png">
+            Home</button>
+        <button onclick="goToPage('publications.html')"><img class="navbar-img"
+                src="./assets/images/navbar/img-publications.png">
+            Publications</button>
+        <button onclick="goToPage('projects.html')"><img class="navbar-img"
+                src="./assets/images/navbar/img-projects.png">
+            Projects</button>
+        <button id="btn-notes" onclick="goToPage('notes.html')"><img class="navbar-img"
+                src="./assets/images/navbar/img-notes.png">
+            Notes</button>
+    </div>
+
+    <div class="home">
+
+        <div class="home-g1">
+            <h1><b>Mominul</b> Islam</h1>
+        </div>
+
+        <div class="home-g2">
+            <p>
+                Hey there! Welcome to my website! I recently graduated with a bachelor's degree in Computer Science
+                and Engineering from North South University. I have hands-on research experience over 2 years, have
+                written a paper on AI/ML with <a href="https://hasibzunair.github.io/">Hasib Zunair</a> and <a
+                    href="https://scholar.google.com.au/citations?user=w5djOYsAAAAJ">Dr. Nabeel Mohammed</a>, and
+                published it in Elsevier's
+                Computers in Biology and Medicine journal, which is a Scopus-indexed Q1 journal with an impact
+                factor of 7.7 and an acceptance rate of only 13%. My research interests include multi-modal LLMs,
+                biomedical text processing, image processing, and generative models.
             </p>
-        </div> -->
-
-        <!-- links -->
-        <div class="cell-toggle">
-            <a href="https://github.com/mominul-ssv" target="_blank">
-                <div>
-                    <img class="img-link" src="./assets/images/img-github.png">
-                    <span class="src-link">Github</span>
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/in/mominul-ssv/" target="_blank">
-                <div>
-                    <img class="img-link" src="./assets/images/img-linkedin.png">
-                    <span class="src-link linkedin-text">LinkedIn</span>
-                </div>
-            </a>
-            <a href="https://scholar.google.com/citations?user=K1Mt42gAAAAJ&hl=en" target="_blank">
-                <div>
-                    <img class="img-link" src="./assets/images/img-google-scholar.png">
-                    <span class="src-link scholar-text">Google Scholar</span>
-                </div>
-            </a>
-            <a href="./assets/documents/cv/Curriculum_Vitae.pdf" target="_blank">
-                <div>
-                    <img class="img-link" src="./assets/images/img-resume.png">
-                    <span class="src-link">Curriculum Vitae</span>
-                </div>
-            </a>
+            <br>
+            <p>
+                During my time at North South University, I worked as an Undergraduate Assistant and a Graduate
+                Assistant for two years. Currently, I'm working as an Intern at Beximco Communications Limited.
+            </p>
+            <br>
+            <p>
+                For any further queries, feel free to reach out to me at:
+                <b style="color: #155d70;">mominul[dot]islam05[at]northsouth[dot]edu</b>
+            </p>
         </div>
 
-        <!-- links -->
-    </header>
-    <hr class="hr-toggle">
-
-    <main>
-        <!-- toggle buttons -->
-        <div class="cell-toggle">
-            <button id="btn-research"><img class="toggle-img" src="./assets/images/toggle/img-research.png">
-                Research</button>
-            <button id="btn-work-experience"><img class="toggle-img" src="./assets/images/toggle/img-work-exp.png"> Work
-                Experience</button>
-            <button id="btn-education"><img class="toggle-img" src="./assets/images/toggle/img-education.png">
-                Education</button>
-            <button id="btn-projects"><img class="toggle-img" src="./assets/images/toggle/img-projects.png">
-                Projects</button>
-            <button id="btn-skills"><img class="toggle-img" src="./assets/images/toggle/img-skills.png"> Skills</button>
-            <button id="btn-honors"><img class="toggle-img" src="./assets/images/toggle/img-honors.png"> Honors &
-                Awards</button>
-            <button id="btn-certificates"><img class="toggle-img" src="./assets/images/toggle/img-certificate.png">
-                Certificates</button>
-            <button id="btn-notes"><img class="toggle-img" src="./assets/images/toggle/img-notes.png">Notes</button>
+        <div class="home-g3">
+            <img id="profile-picture" src="./assets/images/img-profile.jpg" alt="profile picture">
         </div>
-        <!-- toggle buttons -->
-        <hr class="hr-toggle">
 
-        <div id="toggle-space"></div>
-
-        <!-- research -->
-        <div id="research" class="section-content">
-            <h3 class="card-title">Publications</h3>
-            <div class="card-body">
-                <div class="research-title">
-                    <b>CosSIF: Cosine similarity-based image filtering to overcome low
-                        inter-class variation in synthetic medical image datasets
-                    </b>
-                </div>
-                <div class="card-research">
-                    <div class="item-1x">
-                        <div class="popup-trigger">
-                            <img class="research-img" src="./assets/images/publications/img_cossif.png">
-                        </div>
+        <div class="home-g4">
+            <div class="navbar">
+                <a href="./assets/documents/cv/Curriculum_Vitae.pdf" target="_blank">
+                    <div>
+                        <img class="img-link" src="./assets/images/img-resume.png">
+                        <span class="src-link">CV</span>
                     </div>
-                    <div class="item-2x">
-                        <p>Generative Adversarial Networks (GANs), when trained using medical image datasets, often
-                            produce synthetic images that bear resemblance to images from other classes. This research
-                            seeks to tackle this issue by introducing an image filtering algorithm called Cosine
-                            Similarity-based Image Filtering (CosSIF). Furthermore, two distinct filtering approaches
-                            are proposed: Filtering Before GAN Training (FBGT) and Filtering After GAN Training (FAGT),
-                            both of which leverage the CosSIF algorithm. The primary objective of the FBGT and FAGT
-                            methodologies is to enhance GANs' capacity to generate synthetic images showcasing highly
-                            discriminative features, while also eliminating synthetic images that closely resemble those
-                            from other classes.
-                        </p>
-                    </div>
-                    <div class="item-3x">
-                        <ul>
-                            <li class="card-bullet">
-                                <b>Authors:</b> <u>Mominul Islam</u>*, <a href="https://hasibzunair.github.io"
-                                    target="_blank">Hasib
-                                    Zunair</a>, <a href="http://ece.northsouth.edu/people/dr-nabeel-mohammed/"
-                                    target="_blank">Nabeel
-                                    Mohammed</a>
-                            </li>
-                            <li class="card-bullet">
-                                <b>Code:</b>
-                                <a href="https://github.com/mominul-ssv/cossif" target="_blank">[GitHub]</a>
-                            </li>
-                            <li class="card-bullet">
-                                <b>Preprint:</b>
-                                <a href="https://arxiv.org/abs/2307.13842" target="_blank">[arXiv]</a><a
-                                    href="https://arxiv.org/pdf/2307.13842.pdf" target="_blank">[PDF]</a>
-                            </li>
-                            <li class="card-bullet">
-                                <b>PyPI:</b>
-                                <a href="https://pypi.org/project/cossif" target="_blank">[pip]</a>
-                            </li>
-                            <li class="card-bullet">
-                                <b>Journal: Computers in Biology and Medicine (Accepted)</a>
-                            </li>
-                            <li class="card-bullet">
-                                <b>Impact Factor: </b> 7.7
-                            </li>
-                            <li class="card-bullet">
-                                <b>Year:</b> 2024
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
-        <!-- research -->
 
-        <!-- work experience -->
-        <div id="work-experience" class="section-content">
-            <h3 class="card-title">Work Experience</h3>
-            <!-- work experience-3 -->
-            <div class="card-body">
-                <div class="card-work">
-                    <div class="item-1">
-                        <img class="img-job" src="./assets/images/img-nsu.png">
-                    </div>
-                    <div class="item-2">
-                        <b>Research Assistant</b>
-                    </div>
-                    <div class="item-3">
-                        <p>Oct. 2023 - Feb. 2024</p>
-                    </div>
-                    <div class="item-4">
-                        <p>Department of Electrical and Computer Engineering</p>
-                    </div>
-                    <div class="item-5">
-                        <p>North South University</p>
-                    </div>
-                    <div class="item-6">
-                        <p>Dhaka, Bangladesh</p>
-                    </div>
-                </div>
-                <hr class="hr-work">
-                <div>
-                    Supervisor: <a href="http://ece.northsouth.edu/people/dr-mohammad-ashrafuzzaman-khan/"
-                        target="_blank">
-                        Dr. Mohammad Ashrafuzzaman Khan
-                    </a>
-                </div>
-            </div>
-            <!-- work experience-3 -->
-            <!-- work experience-2 -->
-            <div class="card-body">
-                <div class="card-work">
-                    <div class="item-1">
-                        <img class="img-job" src="./assets/images/img-nsu.png">
-                    </div>
-                    <div class="item-2">
-                        <b>Graduate Assistant</b>
-                    </div>
-                    <div class="item-3">
-                        <p>Jul. 2023 - Present</p>
-                    </div>
-                    <div class="item-4">
-                        <p>Department of Electrical and Computer Engineering</p>
-                    </div>
-                    <div class="item-5">
-                        <p>North South University</p>
-                    </div>
-                    <div class="item-6">
-                        <p>Dhaka, Bangladesh</p>
-                    </div>
-                </div>
-                <hr class="hr-work">
-                <div>
-                    <p class="card-exp">Course: Concepts of Programming Language (CSE425)</p>
-                    <p class="card-exp">Semester: Summer 2023, Intersession 2023</p>
-                </div>
-            </div>
-            <!-- work experience-2 -->
-            <!-- work experience-1 -->
-            <div class="card-body">
-                <div class="card-work">
-                    <div class="item-1">
-                        <img class="img-job" src="./assets/images/img-nsu.png">
-                    </div>
-                    <div class="item-2">
-                        <b>Undergraduate Assistant</b>
-                    </div>
-                    <div class="item-3">
-                        <p>Feb. 2022 - Jun. 2023</p>
-                    </div>
-                    <div class="item-4">
-                        <p>Department of Electrical and Computer Engineering</p>
-                    </div>
-                    <div class="item-5">
-                        <p>North South University</p>
-                    </div>
-                    <div class="item-6">
-                        <p>Dhaka, Bangladesh</p>
-                    </div>
-                </div>
-                <hr class="hr-work">
-                <div>
-                    <p class="card-exp">Course: Computer Organization and Architecture (CSE332)</p>
-                    <p class="card-exp">Semesters: Spring 2022, Summer 2022, Fall 2022, Spring 2023
-                </div>
-                <hr class="hr-work">
-                <ul>
-                    <p class="card-exp"><b>Responsibilities:</b></p>
-                    <li class="card-bullet">Grading homework assignments and maintaining office hours for student
-                        consultations.</li>
-                    <li class="card-bullet">Conducting tutorial sessions for students requiring extra help outside of
-                        class hours.</li>
-                    <li class="card-bullet">Maintaining 4 hours per week per section, divided among assisting faculty
-                        members.</li>
-                </ul>
-            </div>
-            <!-- work experience-1 -->
+        <div class="home-g5">
+            <hr>
         </div>
-        <!-- work experience -->
 
-        <!-- education -->
-        <div id="education" class="section-content">
-            <h3 class="card-title">Education</h3>
-            <!-- education-3 -->
-            <div class="card-body">
-                <div class="card-edu">
-                    <div class="item-1a">
-                        <img class="img-edu" src="./assets/images/img-nsu.png">
+        <div class="home-g6">
+            <div class="navbar social">
+                <a href="https://scholar.google.com/citations?user=K1Mt42gAAAAJ&hl=en" target="_blank">
+                    <div>
+                        <img class="img-link" src="./assets/images/img-google-scholar.png">
+                        <span class="src-link scholar-text">Google Scholar</span>
                     </div>
-                    <div class="item-2a">
-                        <b>North South University</b>
+                </a>
+                <a href="https://orcid.org/0009-0001-6409-964X" target="_blank">
+                    <div>
+                        <img class="img-link" src="./assets/images/img-orcid.png">
+                        <span class="src-link orcid-text">ORCiD </span>
                     </div>
-                    <div class="item-3a">
-                        <p>Dhaka, Bangladesh</p>
+                </a>
+                <a href="https://github.com/mominul-ssv" target="_blank">
+                    <div>
+                        <img class="img-link" src="./assets/images/img-github.png">
+                        <span class="src-link">Github</span>
                     </div>
-                    <div class="item-4a">
-                        <p>Bachelor of Science in Computer Science and Engineering</p>
+                </a>
+                <a href="https://www.linkedin.com/in/mominul-ssv/" target="_blank">
+                    <div>
+                        <img class="img-link" src="./assets/images/img-linkedin.png">
+                        <span class="src-link linkedin-text">LinkedIn</span>
                     </div>
-                    <div class="item-5a">
-                        <p>Jan. 2019 - Jun. 2023</p>
-                    </div>
-                </div>
-                <hr class="hr-edu">
-                <ul>
-                    <li class="card-bullet">CGPA: 3.86 out of 4.00</li>
-                    <li class="card-bullet">Distinction: Summa Cum Laude</li>
-                </ul>
-            </div>
-            <!-- education-3 -->
-
-            <!-- education-2 -->
-            <div class="card-body">
-                <div class="card-edu">
-                    <div class="item-1a">
-                        <img class="img-edu" src="./assets/images/img-dic.jpg">
-                    </div>
-                    <div class="item-2a">
-                        <b>Dhaka Imperial College</b>
-                    </div>
-                    <div class="item-3a">
-                        <p>Dhaka, Bangladesh</p>
-                    </div>
-                    <div class="item-4a">
-                        <p>Higher Secondary Certificate (Equivalent to 12th Grade)</p>
-                    </div>
-                    <div class="item-5a">
-                        <p>Class of 2017</p>
-                    </div>
-                </div>
-                <hr class="hr-edu">
-                <ul>
-                    <li class="card-bullet">GPA: 5.00 out of 5.00</li>
-                    <li class="card-bullet">Group: Science</li>
-                </ul>
-            </div>
-            <!-- education-2 -->
-
-            <!-- education-1 -->
-            <div class="card-body">
-                <div class="card-edu">
-                    <div class="item-1a">
-                        <img class="img-edu" src="./assets/images/img-gcb.jpg">
-                    </div>
-                    <div class="item-2a">
-                        <b>Gazipur Cantonment Board High School</b>
-                    </div>
-                    <div class="item-3a">
-                        <p>Dhaka, Bangladesh</p>
-                    </div>
-                    <div class="item-4a">
-                        <p>Secondary School Certificate (Equivalent to 10th Grade)</p>
-                    </div>
-                    <div class="item-5a">
-                        <p>Class of 2015</p>
-                    </div>
-                </div>
-                <hr class="hr-edu">
-                <ul>
-                    <li class="card-bullet">GPA: 5.00 out of 5.00</li>
-                    <li class="card-bullet">Group: Science</li>
-                </ul>
-            </div>
-            <!-- education-1 -->
-        </div>
-        <!-- education -->
-
-        <!-- projects -->
-        <div id="projects" class="section-content">
-            <h3 class="card-title">Notable Projects</h3>
-
-            <!-- project-6 -->
-            <div class="card-body">
-                <div class="card-project">
-                    <div class="item-1b">
-                        <b>Fine-Tuning mT5 on XL-Sum Dataset for Abstractive Text Summarization</b>
-                    </div>
-                    <div class="item-2b">
-                        <p>Jan. 2023 - Jun. 2023</p>
-                    </div>
-                    <div class="item-3b">
-                        <p>CSE495: Natural Language Processing</p>
-                    </div>
-                </div>
-                <hr class="hr-edu">
-                <ul>
-                    <li class="card-bullet">This project involves fine-tuning a pre-trained mT5 model on the XL-Sum
-                        dataset for the abstractive Bengali text summarization task, followed by a comprehensive
-                        evaluation using ROUGE metrics.</li>
-                    <li class="card-bullet"><b>Tools/Technology:</b> Python, PyTorch, HuggingFace, Kaggle
-                    </li>
-                    <li class="card-bullet"><b>Source Files: </b><a
-                            href="https://github.com/mominul-ssv/mT5-text-sum-bengali" target="_blank">[GitHub]</a></li>
-                </ul>
-            </div>
-            <!-- project-6 -->
-
-            <!-- project-5 -->
-            <div class="card-body">
-                <div class="card-project">
-                    <div class="item-1b">
-                        <b>Image-to-Image Translation via StyleGAN2-ADA to Address Class Imbalance</b>
-                    </div>
-                    <div class="item-2b">
-                        <p>May 2022 - Sep. 2022</p>
-                    </div>
-                    <div class="item-3b">
-                        <p>CSE465: Pattern Recognition and Neural Network</p>
-                    </div>
-                </div>
-                <hr class="hr-edu">
-                <ul>
-                    <li class="card-bullet">Leveraging StyleGAN2-ADA, this project mitigates class imbalance in the
-                        ISIC-2016 dataset by generating synthetic images, while also utilizing convolutional neural
-                        networks (CNNs) for training a skin lesion classifier.</li>
-                    <li class="card-bullet"><b>Tools/Technology:</b> Python, TensorFlow, Keras, PyTorch, Kaggle
-                    </li>
-                    <li class="card-bullet"><b><i>[Matured to bachelor's thesis]</i></b></li>
-                </ul>
-            </div>
-            <!-- project-5 -->
-
-            <!-- project-4 -->
-            <div class="card-body">
-                <div class="card-project">
-                    <div class="item-1b">
-                        <b>Heart Disease Detection Using Machine Learning</b>
-                    </div>
-                    <div class="item-2b">
-                        <p>May 2022 - Sep. 2022</p>
-                    </div>
-                    <div class="item-3b">
-                        <p>CSE445: Machine Learning</p>
-                    </div>
-                </div>
-                <hr class="hr-edu">
-                <ul>
-                    <li class="card-bullet">Predicting heart disease probability and categorizing patient risk levels
-                        using machine learning algorithms: Logistic Regression, Random Forest, Decision Tree, KNN, and
-                        Naive Bayes.</li>
-                    <li class="card-bullet"><b>Tools/Technology:</b> Python, Scikit-learn
-                    </li>
-                    <li class="card-bullet"><b>Source Files: </b><a
-                            href="https://github.com/mominul-ssv/heart-disease-detection" target="_blank">[GitHub]</a>
-                    </li>
-                </ul>
-                <hr class="hr-edu">
-                <div class="img-projects">
-                    <div class="popup-trigger">
-                        <p>Relationships Between Important Features</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse445/img-cse445-rel-features.png">
-                    </div>
-                    <div class="popup-trigger">
-                        <p>ROC Curve and AUC</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse445/img-cse445-roc-auc.png">
-                    </div>
-                    <div class="popup-trigger">
-                        <p>10-fold CV Accuracy (%)</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse445/img-cse445-10-fold-accuracy.png">
-                    </div>
-                </div>
-            </div>
-            <!-- project-4 -->
-
-            <!-- project-3 -->
-            <div class="card-body">
-                <div class="card-project">
-                    <div class="item-1b">
-                        <b>Internship Repository System</b>
-                    </div>
-                    <div class="item-2b">
-                        <p>Jan. 2022 - May 2022</p>
-                    </div>
-                    <div class="item-3b">
-                        <p>CSE482: Internet and Web Technology</p>
-                    </div>
-                </div>
-                <hr class="hr-edu">
-                <ul>
-                    <li class="card-bullet">A sophisticated internship repository web application featuring a
-                        comprehensive search menu designed to efficiently catalog and showcase completed internships
-                        pursued by students across various universities and diverse companies.</li>
-                    <li class="card-bullet"><b>Tools/Technology:</b> HTML5, CSS3, Sass, JavaScript, Ajax, PHP, MySQL
-                    </li>
-                    <li class="card-bullet"><b>Source Files: </b><a
-                            href="https://github.com/mominul-ssv/intern-recruit-sys" target="_blank">[GitHub]</a></li>
-                </ul>
-                <hr class="hr-edu">
-                <div class="img-projects">
-                    <div class="popup-trigger">
-                        <p>Architecture</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse482/img-cse482-arch.png">
-                    </div>
-                    <div class="popup-trigger">
-                        <p>ERD</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse482/img-cse482-erd.png">
-                    </div>
-                    <div class="popup-trigger">
-                        <p>Archive Portal</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse482/img-cse482-archive.png">
-                    </div>
-                    <div class="popup-trigger">
-                        <p>Login/Registration</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse482/img-cse482-log-reg.png">
-                    </div>
-                    <div class="popup-trigger">
-                        <p>Student/Faculty Portal</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse482/img-cse482-std-fac.png">
-                    </div>
-                </div>
-            </div>
-            <!-- project-3 -->
-
-            <!-- project-2 -->
-            <div class="card-body">
-                <div class="card-project">
-                    <div class="item-1b">
-                        <b>ScholarLink: Academic Management and Scholarship System</b>
-                    </div>
-                    <div class="item-2b">
-                        <p>Sep. 2021 - Jan. 2022</p>
-                    </div>
-                    <div class="item-3b">
-                        <p>CSE327: Software Engineering</p>
-                    </div>
-                </div>
-                <hr class="hr-edu">
-                <ul>
-                    <li class="card-bullet">ScholarLink is an innovative web application that transforms academic
-                        management, offering students seamless online course registration, grade tracking, and
-                        scholarship applications, while enhancing faculty course management and administrative control.
-                    </li>
-                    <li class="card-bullet"><b>Tools/Technology:</b> HTML5, CSS3, Bootstrap 5, JavaScript, Node.js,
-                        Express.js, MongoDB,
-                        Mongoose ODM</li>
-                    <li class="card-bullet"><b>Source Files: </b><a
-                            href="https://github.com/mominul-ssv/scholar-manage-sys" target="_blank">[GitHub]</a></li>
-                </ul>
-                <hr class="hr-edu">
-                <div class="img-projects">
-                    <div class="popup-trigger">
-                        <p>Schema</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse327/img-cse327-schema-diagram.png">
-                    </div>
-                    <div class="popup-trigger">
-                        <p>Login Page</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse327/img-cse327-login.png">
-                    </div>
-                    <div class="popup-trigger">
-                        <p>Student Portal</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse327/img-cse327-student.png">
-                    </div>
-                    <div class="popup-trigger">
-                        <p>Faculty Portal</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse327/img-cse327-faculty.png">
-                    </div>
-                    <div class="popup-trigger">
-                        <p>Admin Portal</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse327/img-cse327-admin.png">
-                    </div>
-                </div>
-            </div>
-            <!-- project-2 -->
-
-            <!-- project-1 -->
-            <div class="card-body">
-                <div class="card-project">
-                    <div class="item-1b">
-                        <b>16-bit Single Cycle RISC based Processor</b>
-                    </div>
-                    <div class="item-2b">
-                        <p>Jan. 2021 - May 2021</p>
-                    </div>
-                    <div class="item-3b">
-                        <p>CSE332: Computer Organization and Architecture</p>
-                    </div>
-                </div>
-                <hr class="hr-edu">
-                <ul>
-                    <li class="card-bullet">A simulation of 16 bit single-cycle RISC based CPU including ISA, Assembler
-                        and Data-path.</li>
-                    <li class="card-bullet"><b>Tools/Technology:</b> Python, Assembly Language, Logisim</li>
-                    <li class="card-bullet"><b>Source Files: </b><a
-                            href="https://github.com/mominul-ssv/16-bit-processor" target="_blank">[GitHub]</a></li>
-                </ul>
-                <hr class="hr-edu">
-                <div class="img-projects">
-                    <div class="popup-trigger">
-                        <p>Datapath</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse332/img-cse332-datapath.png">
-                    </div>
-                    <div class="popup-trigger">
-                        <p>Control Unit</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse332/img-cse332-control-unit.png">
-                    </div>
-                    <div class="popup-trigger">
-                        <p>Register</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse332/img-cse332-reg.png">
-                    </div>
-                    <div class="popup-trigger">
-                        <p>ALU</p>
-                        <hr>
-                        <img src="./assets/images/projects/cse332/img-cse332-alu.png">
-                    </div>
-                </div>
-            </div>
-            <!-- project-1 -->
-
-        </div>
-        <!-- projects -->
-
-        <!-- skills -->
-        <div id="skills" class="section-content">
-            <h3 class="card-title">Active Skills</h3>
-            <div class="card-body">
-                <ul>
-                    <li class="no-bullets-skills"><b>Programming: </b>Python, C/C++</li>
-                    <li class="no-bullets-skills"><b>Frameworks: </b>TensorFlow, Keras, PyTorch</li>
-                    <li class="no-bullets-skills"><b>Libraries: </b>Scikit-learn, OpenCV, Pandas, Matplotlib</li>
-                    <li class="no-bullets-skills"><b>Front-end: </b>HTML, CSS, JavaScript</li>
-                    <li class="no-bullets-skills"><b>DevOps: </b>Colab, Kaggle, GitHub, Git, LaTeX</li>
-                </ul>
-            </div>
-            <h3 class="card-title">Legacy Skills</h3>
-            <div class="card-body">
-                <ul>
-                    <li class="no-bullets-skills"><b>Programming: </b>PHP</li>
-                    <li class="no-bullets-skills"><b>Back-end: </b>EJS, Node.js, Express.js, MongoDB, Mongoose, MySQL
-                    </li>
-                    <li class="no-bullets-skills"><b>Front-end: </b>Sass, Bootstrap</li>
-                </ul>
+                </a>
             </div>
         </div>
-        <!-- skills -->
 
-        <!-- honors & awards -->
-        <div id="honors" class="section-content">
-            <h3 class="card-title">Honors</h3>
-            <div class="card-body">
-                <div class="card-honors">
-                    <div class="item-1c">
-                        <b>Top 10 out of 102 teams, </b> in Innovation Challenge (IC) Season 13, Capstone Project
-                        Showcase
-                    </div>
-                    <div class="item-2c">
-                        <p>2023</p>
-                    </div>
-                </div>
-                <hr>
-                <b>Topic -> </b>CSFL: Cosine Similarity-Based Filtering Algorithm for Downsampling Big Datasets and
-                RPSC: Reversed Pyramid Super Classifier for Artificial General Intelligence
-            </div>
-            <h3 class="card-title">Awards</h3>
-            <div class="card-body">
-                <div class="card-honors">
-                    <div class="item-1c">
-                        <b>50% tuition waiver, </b> in recognition of academic performances at North South
-                        University
-                    </div>
-                    <div class="item-2c">
-                        <p>2022</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="card-honors">
-                    <div class="item-1c">
-                        <b>25% tuition waiver, </b> in recognition of academic performances at North South
-                        University
-                    </div>
-                    <div class="item-2c">
-                        <p>2020</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- honors & awards -->
+    </div>
 
-        <!-- certificates -->
-        <div id="certificates" class="section-content">
-            <h3 class="card-title">Certificates</h3>
-            <div class="card-body">
-                <div class="card-certificates">
-                    <div class="item-1d">
-                        <b>IELTS, </b>British Council
-                    </div>
-                    <div class="item-2d">
-                        <p>2023</p>
-                    </div>
-                </div>
-                <hr class="hr-certificates">
-                <div>
-                    <b>Overall: </b> 7.0
-                    [<i>Speaking: </i>7.5,
-                    <i>Reading: </i>7.5,
-                    <i>Writing: </i>7.0,
-                    <i>Listening: </i>6.5]
-                </div>
-                <hr class="hr-certificates">
-                <div>
-                    <a href="./assets/documents/ielts/IELTS_Certificate_2023.pdf" target="_blank">[Certificate]</a>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="card-certificates">
-                    <div class="item-1d">
-                        <b>Coursera, </b>Deep Learning Specialization, Neural Networks and Deep Learning
-                    </div>
-                    <div class="item-2d">
-                        <p>2022</p>
-                    </div>
-                </div>
-                <hr class="hr-certificates">
-                <div>
-                    <b>Grade: </b></b>97%
-                </div>
-                <hr class="hr-certificates">
-                <div>
-                    <a href="./assets/documents/honors/coursera_neural_networks_and_deep_learning.pdf"
-                        target="_blank">[Certificate]</a>
-                    <a href="https://coursera.org/share/44056644b829c8328fa0e7c1665046cb" target="_blank">[Verify]</a>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="card-certificates">
-                    <div class="item-1d">
-                        <b>Code with Mosh, </b>Ultimate Java Part 1: Fundamentals
-                    </div>
-                    <div class="item-2d">
-                        <p>2020</p>
-                    </div>
-                </div>
-                <hr class="hr-certificates">
-                <div>
-                    <a href="./assets/documents/honors/code_with_mosh_java_1.pdf" target="_blank">[Certificate]</a>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="card-certificates">
-                    <div class="item-1d">
-                        <b>Code with Mosh, </b>Ultimate Java Part 2: Object-oriented Programming
-                    </div>
-                    <div class="item-2d">
-                        <p>2020</p>
-                    </div>
-                </div>
-                <hr class="hr-certificates">
-                <div>
-                    <a href="./assets/documents/honors/code_with_mosh_java_2.pdf" target="_blank">[Certificate]</a>
-                </div>
-            </div>
-        </div>
-        <!-- certificates -->
-
-        <!-- notes -->
-        <div id="notes" class="section-content">
-            <div class="card-body">
-                <!-- Math -->
-                <div>
-                    <h3 class="notes-head"><img class="notes-head-img" src="./assets/images/img-math.png">
-                        Mathematics</h3>
-                    <hr class="hr-notes">
-                    <div class="card-body cb-effect">
-                        <div class="card-notes">
-                            <div class="course-name">
-                                <b>MAT361 </b>Probability and Statistics
-                            </div>
-                            <div>
-                                <b>Reference Book -> </b>Probability and Statistics for Engineers and Scientists, 4th
-                                Edition
-                            </div>
-                            <div>
-                                <b>Paper Notes -> </b>
-                                <a href="https://drive.google.com/file/d/1AMd9Tosbw2Rb-5iWIDXzQIpApNav3OI6/view"
-                                    target="_blank">[Download - 138 Pages]</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body cb-effect">
-                        <div class="card-notes">
-                            <div class="course-name">
-                                <b>MAT350 </b>Calculus IV
-                            </div>
-                            <!-- <div>
-                                <b>Reference Book -> </b>
-                            </div>
-                            <div>
-                                <b>Paper Notes -></b>
-                                <div>
-                                    [Part-1]: <a href="" target="_blank">[Download - X Pages]</a>
-                                </div>
-                                <div>
-                                    [Part-2]: <a href="" target="_blank">[Download - X Pages]</a>
-                                </div>
-                                <div>
-                                    [Part-3]: <a href="" target="_blank">[Download - X Pages]</a>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="card-body cb-effect">
-                        <div class="card-notes">
-                            <div class="course-name">
-                                <b>MAT250 </b>Calculus III
-                            </div>
-                            <div>
-                                <b>Reference Book -> </b>Calculus: Early Transcendentals, 10th Edition
-                            </div>
-                            <div>
-                                <b>Paper Notes -></b>
-                                <div>
-                                    Part-1: <a
-                                        href="https://drive.google.com/file/d/1bHh0JXyEwrhW-idzlbV7aAqU12IMS1Qz/view"
-                                        target="_blank">[Download - 118 Pages]</a>
-                                    <b>Chapter-13:</b> Partial Derivatives (1/2)
-                                </div>
-                                <div>
-                                    Part-2: <a
-                                        href="https://drive.google.com/file/d/1q7C_UHLLR-KODVdYj1lTsdIHKQ-41uMO/view"
-                                        target="_blank">[Download - 209 Pages]</a>
-                                    <b>Chapter-13:</b> (2/2),
-                                    <b>Chapter-14:</b> Multiple Integrals,
-                                    <b>Chapter-15:</b> Topics in Vector Calculus,
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body cb-effect">
-                        <div class="card-notes">
-                            <div class="course-name">
-                                <b>MAT130 </b>Calculus II
-                            </div>
-                            <div>
-                                <b>Reference Book -> </b>Calculus: Early Transcendentals, 10th Edition
-                            </div>
-                            <div>
-                                <b>Paper Notes -></b>
-                                <div>
-                                    Part-1: <a
-                                        href="https://drive.google.com/file/d/1kNDlXVj7_rCp3J0k2u1M4J0jD__klKtc/view"
-                                        target="_blank">[Download - 85 Pages]</a>
-                                    <b>Chapter-7:</b> Principals of Integral Evaluation (1/3)
-                                </div>
-                                <div>
-                                    Part-2: <a
-                                        href="https://drive.google.com/file/d/1d4XATAohwVcQhl1A2r4UOoTkLd1TWV3V/view"
-                                        target="_blank">[Download - 255 Pages]</a>
-                                    <b>Chapter-6:</b> Applications of the Definite Integral in Geometry, Science, and
-                                    Engineering (1/2)
-                                    <b>Chapter-7:</b> (2/3),
-                                </div>
-                                <div>
-                                    Part-3: <a
-                                        href="https://drive.google.com/file/d/1STWgDRrTcPb6JPBjp7JttrPUc0sDg6VW/view"
-                                        target="_blank">[Download - 205 Pages]</a>
-                                    <b>Chapter-6:</b> (2/2)
-                                    <b>Chapter-7:</b> (3/3)
-                                    <b>Chapter-10:</b> Parametric and Polar Curves; Conic Sections
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body cb-effect">
-                        <div class="card-notes">
-                            <div class="course-name">
-                                <b>MAT120 </b>Calculus I
-                            </div>
-                            <div>
-                                <b>Reference Book -> </b>Calculus: Early Transcendentals, 10th Edition
-                            </div>
-                            <div>
-                                <b>Paper Notes -></b>
-                                <div>
-                                    Part-1: <a
-                                        href="https://drive.google.com/file/d/1ri-3aOfSN-xEPGVd3X3sbu1PZBuD7LZK/view"
-                                        target="_blank">[Download - 170 Pages]</a>
-                                    <b>Chapter-0:</b> Before Calculus,
-                                    <b>Chapter-1:</b> Limits and Continuity,
-                                    <b>Chapter-2:</b> The Derivative
-                                </div>
-                                <div>
-                                    Part-2: <a
-                                        href="https://drive.google.com/file/d/1efGqW81xIUaZ8nqb0Gm1DxZdH3KsW5ie/view"
-                                        target="_blank">[Download - 166 Pages]</a>
-                                    <b>Chapter-3:</b> Topics of Differentiation,
-                                    <b>Chapter-4:</b> The Derivative in Graphing,
-                                    <b>Chapter-5:</b> Integration (1/2)
-                                </div>
-                                <div>
-                                    Part-3: <a
-                                        href="https://drive.google.com/file/d/1ejBcIF_FNop_M6NcWbcEfR20-vRyOCVF/view"
-                                        target="_blank">[Download - 82 Pages]</a>
-                                    <b>Chapter-5:</b> (2/2)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body cb-effect">
-                        <div class="card-notes">
-                            <div class="course-name">
-                                <b>MAT125 </b>Introduction to Linear Algebra
-                            </div>
-                            <div>
-                                <b>Reference Book -> </b>Elementary Linear Algebra, 9th Edition
-                            </div>
-                            <div>
-                                <b>Paper Notes -></b>
-                                <div>
-                                    Part-1: <a
-                                        href="https://drive.google.com/file/d/1r7B5NVdz1JoD2zCP1N6exDK18LAMa2Mu/view"
-                                        target="_blank">[Download - 143 Pages]</a>
-                                    <b>Chapter-1:</b> Systems of Linear Equations and Matrices,
-                                    <b>Chapter-2:</b> Determinants,
-                                    <b>Chapter-4:</b> Euclidean Vector Spaces (1/2)
-                                </div>
-                                <div>
-                                    Part-2: <a
-                                        href="https://drive.google.com/file/d/1ML-yrKdbUOUSsaAeUP3XDPlTw3OPDH93/view"
-                                        target="_blank">[Download - 137 Pages]</a>
-                                    <b>Chapter-4:</b> (2/2)
-                                    <b>Chapter-5:</b> General Vector Spaces,
-                                    <b>Chapter-7:</b> Eigenvalues, Eigenvectors
-                                    <b>Chapter-11:</b> Applications of Linear Algebra
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body cb-effect">
-                        <div class="card-notes">
-                            <div class="course-name">
-                                <b>MAT116 </b>Pre-Calculus
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Computer Science -->
-                <div>
-                    <h3 class="notes-head"><img class="notes-head-img" src="./assets/images/img-cse.png"> Computer Science
-                    </h3>
-                    <hr class="hr-notes">
-                    <div class="card-body cb-effect">
-                        <div class="card-notes">
-                            <div class="course-name">
-                                <b>CSE332 </b>Computer Organization and Architecture
-                            </div>
-                            <div>
-                                <b>Paper Notes -> </b><a
-                                    href="https://drive.google.com/file/d/1eedD796pzAkfde-TJd49Ie8EoEns6FAc/view?usp=drive_link"
-                                    target="_blank">[Download - 125 Pages]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-body cb-effect">
-                        <div class="card-notes">
-                            <div class="course-name">
-                                <b>CSE173 </b>Discrete Mathematics
-                            </div>
-                            <div>
-                                <b>Paper Notes -> </b><a
-                                    href="https://drive.google.com/file/d/150-jAuwXFqR53y8amrKuXhiW26XOi-X-/view?usp=sharing"
-                                    target="_blank">[Download - 170 Pages]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- notes -->
-
-        <!-- popup overlay -->
-        <div class="popup-overlay" id="popup">
-            <div class="popup-content">
-                <button class="popup-close" id="close-button">&times;</button>
-                <img src="" alt="Image" class="popup-image">
-            </div>
-        </div>
-        <!-- popup overlay -->
-
+    <div class="footer">
         <div class="copyright">
             <p>Website developed and maintained by <b>©Mominul Islam</b></p>
         </div>
+    </div>
 
-    </main>
-
-    <!-- link the script.js file -->
     <script src="./scripts.js"></script>
 </body>

@@ -1,50 +1,22 @@
-// JavaScript code to handle section toggling
-function showSection(sectionId) {
-    var sections = document.querySelectorAll(".section-content");
-    for (var i = 0; i < sections.length; i++) {
-        if (sections[i].id === sectionId) {
-            sections[i].style.display = "block";
-        } else {
-            sections[i].style.display = "none";
-        }
+function goToPage(page) {
+    window.location.href = page;
+}
+
+function adjustFooterPosition() {
+    var bodyHeight = document.body.scrollHeight;
+    var viewportHeight = window.innerHeight;
+    var footer = document.querySelector('.footer');
+
+    if (bodyHeight > viewportHeight) {
+        footer.style.position = 'relative';
+    } else {
+        footer.style.position = 'absolute';
     }
 }
 
-// Show the "Research" section by default
-showSection("research");
-
-// Event listeners for the buttons to toggle the corresponding sections
-document.getElementById("btn-research").addEventListener("click", function () {
-    showSection("research");
-});
-
-document.getElementById("btn-work-experience").addEventListener("click", function () {
-    showSection("work-experience");
-});
-
-document.getElementById("btn-education").addEventListener("click", function () {
-    showSection("education");
-});
-
-document.getElementById("btn-projects").addEventListener("click", function () {
-    showSection("projects");
-});
-
-document.getElementById("btn-skills").addEventListener("click", function () {
-    showSection("skills");
-});
-
-document.getElementById("btn-honors").addEventListener("click", function () {
-    showSection("honors");
-});
-
-document.getElementById("btn-certificates").addEventListener("click", function () {
-    showSection("certificates");
-});
-
-document.getElementById("btn-notes").addEventListener("click", function () {
-    showSection("notes");
-});
+// Run on page load and window resize
+window.addEventListener('load', adjustFooterPosition);
+window.addEventListener('resize', adjustFooterPosition);
 
 // popup trigger
 const popupOverlay = document.getElementById('popup');
