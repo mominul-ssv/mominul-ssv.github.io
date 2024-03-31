@@ -286,6 +286,10 @@ hr {
     list-style-type:square;
     margin: 5px 0px 0px 15px;
 }
+
+.membrane {
+    margin-top: 15px;
+}
 /* ########### Card ########### */
 
 /* ########### Publications ########### */
@@ -293,6 +297,7 @@ hr {
     border-radius: 0;
     border: 1px solid #a5b7bc;
     padding: 10px;
+    margin-top: 15px;
 }
 
 .publication {
