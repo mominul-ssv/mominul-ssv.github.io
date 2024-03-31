@@ -42,13 +42,28 @@ body {
     min-height: 100vh;
     font-size: 13px;
     position: relative;
-    padding-bottom: 45px; 
+    padding-bottom: 3rem;
 }
 
 hr {
     border: 1px solid #a5b7bc;
 }
 
+/* ########### Footer ########### */
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #8aaeb8;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* ########### Footer ########### */
+
+/* ########### Colors ########### */
 .blue-link {
     border: 1px solid #03A9F4;
     border-radius: 3px;
@@ -62,7 +77,8 @@ hr {
 }
 
 .green-link {
-    border: 1px solid #4CAF50;;
+    border: 1px solid #4CAF50;
+    ;
     border-radius: 3px;
     padding: 1px 10px;
     color: #4CAF50;
@@ -74,7 +90,8 @@ hr {
 }
 
 .purple-link {
-    border: 1px solid #984caf;;
+    border: 1px solid #984caf;
+    ;
     border-radius: 3px;
     padding: 1px 10px;
     color: #984caf;
@@ -84,6 +101,8 @@ hr {
     background-color: #984caf;
     color: white;
 }
+
+/* ########### Colors ########### */
 
 /* ########### Navbar ########### */
 .navbar {
@@ -188,20 +207,8 @@ hr {
 #btn-notes:hover {
     background: rgb(16, 135, 72);
 }
-/* ########### Navbar ########### */
 
-/* ########### Footer ########### */
-.footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #8aaeb8;
-    color: white;
-    text-align: center;
-    padding: 10px 0; 
-}
-/* ########### Footer ########### */
+/* ########### Navbar ########### */
 
 /* ########### Home ########### */
 .home {
@@ -269,6 +276,7 @@ hr {
     grid-column: 1 / span 2;
     grid-row: 6;
 }
+
 /* ########### Home ########### */
 
 /* ########### Card ########### */
@@ -283,13 +291,14 @@ hr {
 
 .card-bullet {
     font-size: 12px;
-    list-style-type:square;
+    list-style-type: square;
     margin: 5px 0px 0px 15px;
 }
 
 .membrane {
     margin-top: 15px;
 }
+
 /* ########### Card ########### */
 
 /* ########### Publications ########### */
@@ -418,6 +427,7 @@ hr {
     padding: 15px 0 0 0;
     font-weight: bold;
 }
+
 /* ########### Projects ########### */
 
 /* ########### Notes ########### */
@@ -452,6 +462,7 @@ hr {
 .h2-notes {
     font-size: large;
 }
+
 /* ########### Notes ########### */
 
 /* ########### Popup overlay ########### */
@@ -492,6 +503,7 @@ hr {
     font-size: 20px;
     cursor: pointer;
 }
+
 /* ########### Popup overlay ########### */
 
 /* Add media query for smaller screens */
@@ -580,5 +592,11 @@ hr {
 
     .pub-g5 {
         grid-row: 5;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        font-size: 0.7rem;
     }
 }
