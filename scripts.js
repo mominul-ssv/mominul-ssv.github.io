@@ -3,7 +3,7 @@ function goToPage(page) {
 }
 
 function adjustFooterPosition() {
-    var bodyHeight = document.body.scrollHeight;
+    var bodyHeight = document.body.clientHeight;
     var viewportHeight = window.innerHeight;
     var footer = document.querySelector('.footer');
 
