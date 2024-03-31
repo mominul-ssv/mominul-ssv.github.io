@@ -2,22 +2,6 @@ function goToPage(page) {
     window.location.href = page;
 }
 
-function adjustFooterPosition() {
-    var bodyHeight = document.body.clientHeight;
-    var viewportHeight = window.innerHeight;
-    var footer = document.querySelector('.footer');
-
-    if (bodyHeight > viewportHeight) {
-        footer.style.position = 'relative';
-    } else {
-        footer.style.position = 'absolute';
-    }
-}
-
-// Run on page load and window resize
-window.addEventListener('load', adjustFooterPosition);
-window.addEventListener('resize', adjustFooterPosition);
-
 // popup trigger
 const popupOverlay = document.getElementById('popup');
 const closeButton = document.getElementById('close-button');

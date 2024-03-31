@@ -42,6 +42,7 @@ body {
     min-height: 100vh;
     font-size: 13px;
     position: relative;
+    padding-bottom: 45px; 
 }
 
 hr {
@@ -191,17 +192,14 @@ hr {
 
 /* ########### Footer ########### */
 .footer {
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #8aaeb8;
     color: white;
     text-align: center;
-    padding: 10px 0;
-}
-
-.copyright {
-    font-size: 14px;
+    padding: 10px 0; 
 }
 /* ########### Footer ########### */
 
