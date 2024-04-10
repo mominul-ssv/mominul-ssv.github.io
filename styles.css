@@ -221,6 +221,7 @@ hr {
     width: 16rem;
     height: max-content;
     border-radius: 50%;
+    border: 2px dotted rgb(20, 64, 91);
 }
 
 .home-g1,
