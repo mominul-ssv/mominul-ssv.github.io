@@ -218,10 +218,11 @@ hr {
 }
 
 .home #profile-picture {
-    width: 16rem;
+    width: 16.5rem;
     height: max-content;
     border-radius: 50%;
-    border: 2px dotted rgb(20, 64, 91);
+    border: 3px dotted lightsteelblue;
+    padding: 5px;
 }
 
 .home-g1,
