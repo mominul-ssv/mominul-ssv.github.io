@@ -457,7 +457,12 @@ hr {
 }
 
 .hr-notes {
-    margin: 4px 0 5px 0;
+    margin: 5px 0 4px 0;
+    border: 1px dotted #a5b7bc;
+}
+
+.hr-notes-mid {
+    margin: 8px 0 6px 0;
     border: 1px dotted #a5b7bc;
 }
 
