@@ -279,6 +279,12 @@ hr {
     grid-row: 6;
 }
 
+.home-bullet {
+    font-size: 14px;
+    list-style-type: square;
+    margin: 5px 0px 0px 15px;
+}
+
 /* ########### Home ########### */
 
 /* ########### Card ########### */
