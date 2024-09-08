@@ -102,6 +102,19 @@ hr {
     color: white;
 }
 
+.red-link {
+    border: 1px solid #fe3333;
+    ;
+    border-radius: 3px;
+    padding: 1px 10px;
+    color: #ec0000;
+}
+
+.red-link:hover {
+    background-color: #ec0000;
+    color: white;
+}
+
 /* ########### Colors ########### */
 
 /* ########### Navbar ########### */
@@ -120,7 +133,7 @@ hr {
     font-weight: bold;
     white-space: nowrap;
     cursor: pointer;
-    background-color: #155d70;
+    background-color: #1a6c83;
     color: white;
     border: 0;
     max-width: 100%;
@@ -133,7 +146,7 @@ hr {
 }
 
 .navbar button:hover {
-    background-color: #1c758e;
+    background-color: #1e7d97;
 }
 
 .navbar a {
@@ -434,6 +447,13 @@ hr {
 .h2-projects {
     padding: 15px 0 0 0;
     font-weight: bold;
+}
+
+.h3-projects {
+    padding: 5px 5px;
+    margin: 10px 0;
+    font-weight: bold;
+    border: 2px solid black;
 }
 
 /* ########### Projects ########### */
