@@ -115,6 +115,19 @@ hr {
     color: white;
 }
 
+.gray-link {
+    border: 1px solid #bababa;
+    ;
+    border-radius: 3px;
+    padding: 1px 10px;
+    color: #6d6d6d;
+}
+
+.gray-link:hover {
+    background-color: #6d6d6d;
+    color: white;
+}
+
 /* ########### Colors ########### */
 
 /* ########### Navbar ########### */
