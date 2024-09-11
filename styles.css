@@ -42,6 +42,7 @@ body {
     border-left: 2px solid #f3f3f3;
     border-right: 2px solid #f3f3f3;
     padding: 0 2px;
+    background-color: #fcfcfc;
 }
 
 hr {
@@ -167,6 +168,7 @@ hr {
     color: rgb(72, 72, 72);
     border: 0;
     border-top: 2px solid gray;
+    border-left: 2px dotted gray;
     max-width: 100%;
     padding: 10px;
     text-transform: uppercase;
