@@ -15,11 +15,11 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXYB2VFM8B"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-CXYB2VFM8B');
+    gtag('config', 'G-CXYB2VFM8B');
 </script>
 
 <body>
@@ -33,9 +33,11 @@
             <button onclick="goToPage('projects.html')"><img class="navbar-img"
                     src="./assets/images/navbar/img-projects.png">
                 Projects</button>
-            <button id="btn-notes" onclick="goToPage('notes.html')"><img class="navbar-img"
-                    src="./assets/images/navbar/img-notes.png">
+            <button onclick="goToPage('notes.html')"><img class="navbar-img" src="./assets/images/navbar/img-notes.png">
                 Notes</button>
+            <button onclick="goToPage('courses.html')"><img class="navbar-img"
+                    src="./assets/images/navbar/img-courses.png">
+                Courses</button>
         </div>
     </header>
 
@@ -47,7 +49,7 @@
                 </div>
                 <div class="pub-g2">
                     <p><b>CosSIF: Cosine similarity-based image filtering to overcome low inter-class variation in
-                        synthetic medical image datasets</b>
+                            synthetic medical image datasets</b>
                     </p>
                 </div>
                 <div class="pub-g3">
@@ -57,8 +59,10 @@
                     <p class="journal">Computers in Biology and Medicine</p>
                 </div>
                 <div class="pub-g5">
-                    <a href="https://doi.org/10.1016/j.compbiomed.2024.108317" target="_blank"><span class="purple-link">HTML</span></a>
-                    <a href="https://github.com/mominul-ssv/cossif" target="_blank"><span class="blue-link">Code</span></a>
+                    <a href="https://doi.org/10.1016/j.compbiomed.2024.108317" target="_blank"><span
+                            class="purple-link">HTML</span></a>
+                    <a href="https://github.com/mominul-ssv/cossif" target="_blank"><span
+                            class="blue-link">Code</span></a>
                 </div>
                 <div class="pub-g6">
                     <p>2024</p>
@@ -66,11 +70,17 @@
             </div>
         </div>
 
+        <div class="footer-gap">
+        </div>
+
         <div class="footer">
             <div class="copyright">
-                <p>Website developed and maintained by <b>©Mominul Islam</b></p>
+                <p>Website developed and maintained by
+                    <a href="https://github.com/mominul-ssv/mominul-ssv.github.io" target="_blank">©Mominul Islam</a>
+                </p>
             </div>
         </div>
+
     </main>
 
     <script src="./scripts.js"></script>

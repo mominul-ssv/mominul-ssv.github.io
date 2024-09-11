@@ -26,10 +26,6 @@ a {
     color: #0268ce;
 }
 
-a:visited {
-    color: #0268ce;
-}
-
 a:hover {
     color: #328eea;
 }
@@ -43,6 +39,9 @@ body {
     font-size: 13px;
     position: relative;
     padding-bottom: 3rem;
+    border-left: 2px solid #f3f3f3;
+    border-right: 2px solid #f3f3f3;
+    padding: 0 2px;
 }
 
 hr {
@@ -55,10 +54,14 @@ hr {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #8aaeb8;
-    color: white;
+    background-color: #f3f3f3;
+    color: gray;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
+}
+
+.footer-gap {
+    padding: 15px 0;
 }
 
 /* ########### Footer ########### */
@@ -115,6 +118,20 @@ hr {
     color: white;
 }
 
+.orange-link {
+    border: 1px solid #fe9533;
+    ;
+    border-radius: 3px;
+    padding: 1px 10px;
+    color: #e5852a;
+}
+
+.orange-link:hover {
+    background-color: #e5852a;
+    color: white;
+}
+
+
 .gray-link {
     border: 1px solid #bababa;
     ;
@@ -146,9 +163,10 @@ hr {
     font-weight: bold;
     white-space: nowrap;
     cursor: pointer;
-    background-color: #1a6c83;
-    color: white;
+    background-color: #f9f9f978;
+    color: rgb(72, 72, 72);
     border: 0;
+    border-top: 2px solid gray;
     max-width: 100%;
     padding: 10px;
     text-transform: uppercase;
@@ -159,7 +177,8 @@ hr {
 }
 
 .navbar button:hover {
-    background-color: #1e7d97;
+    background-color: #f1f1f1;
+    ;
 }
 
 .navbar a {
@@ -226,28 +245,20 @@ hr {
     border: 1px solid rgb(0, 114, 177);
 }
 
-#btn-notes {
-    background: rgb(38, 160, 95);
-}
-
-#btn-notes:hover {
-    background: rgb(16, 135, 72);
-}
-
 /* ########### Navbar ########### */
 
 /* ########### Home ########### */
 .home {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin: 20px 0;
+    margin: 20px 20px;
 }
 
 .home #profile-picture {
     width: 16.5rem;
     height: max-content;
     border-radius: 50%;
-    border: 3px dotted lightsteelblue;
+    border: 3px dotted lightgray;
     padding: 5px;
 }
 
@@ -297,7 +308,7 @@ hr {
 
 .home-g5 hr {
     margin: 15px 5px;
-    border: 1px dotted #a5b7bc;
+    border: 1px dotted gray;
 }
 
 .home-g6 {
@@ -315,11 +326,11 @@ hr {
 
 /* ########### Card ########### */
 .card-body {
-    color: rgb(20, 64, 91);
+    color: rgb(22, 22, 22);
     background-color: rgb(255, 255, 255);
     padding: 10px;
-    margin: 0.5rem 0;
-    border: 2px solid #a5b7bc;
+    margin: 0.5rem;
+    border: 2px solid lightgray;
     border-radius: 8px;
 }
 
@@ -338,9 +349,10 @@ hr {
 /* ########### Publications ########### */
 .card-border {
     border-radius: 0;
-    border: 1px solid #a5b7bc;
+    border: 2px solid rgb(213, 213, 213);
     padding: 10px;
-    margin-top: 15px;
+    margin: 15px;
+    border-radius: 3px;
 }
 
 .publication {
@@ -458,7 +470,7 @@ hr {
 }
 
 .h2-projects {
-    padding: 15px 0 0 0;
+    padding: 15px 0 0 10px;
     font-weight: bold;
 }
 
@@ -479,9 +491,10 @@ hr {
 }
 
 .notes-head-img {
-    height: 28px;
+    height: 22px;
     width: auto;
     padding-right: 5px;
+    margin: 3px 0 0 3px;
 }
 
 .card-notes {
