@@ -39,10 +39,10 @@ body {
     font-size: 13px;
     position: relative;
     padding-bottom: 3rem;
-    border-left: 2px solid #f3f3f3;
-    border-right: 2px solid #f3f3f3;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #efefef;
     padding: 0 2px;
-    background-color: #fcfcfc;
+    background-color: #fbfbfb;
 }
 
 hr {
@@ -55,10 +55,12 @@ hr {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #f3f3f3;
     color: gray;
     text-align: center;
     padding: 5px 0;
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
 }
 
 .footer-gap {
@@ -164,7 +166,7 @@ hr {
     font-weight: bold;
     white-space: nowrap;
     cursor: pointer;
-    background-color: #f9f9f978;
+    background-color: #fbfbfb;
     color: rgb(72, 72, 72);
     border: 0;
     border-top: 2px solid gray;
@@ -179,8 +181,7 @@ hr {
 }
 
 .navbar button:hover {
-    background-color: #f1f1f1;
-    ;
+    background-color: #efefef;
 }
 
 .navbar a {
@@ -603,7 +604,7 @@ hr {
         display: flex;
         flex-direction: column;
         padding: 0;
-        margin: 10px 0;
+        margin: 10px;
     }
 
     .home-g3,
