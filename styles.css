@@ -354,7 +354,9 @@ hr {
     border-radius: 0;
     border: 2px solid rgb(213, 213, 213);
     padding: 10px;
-    margin: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 3px;
 }
 
