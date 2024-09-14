@@ -527,6 +527,11 @@ hr {
     font-size: large;
 }
 
+.book-author {
+    font-style: italic;
+    color: gray;
+}
+
 /* ########### Notes ########### */
 
 /* ########### Popup overlay ########### */
