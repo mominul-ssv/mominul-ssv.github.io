@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Source Code Pro", sans-serif;
 }
 
 *,
@@ -162,7 +162,7 @@ hr {
 .navbar button {
     flex: 1 0 10%;
     font-size: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Source Code Pro", sans-serif;
     font-weight: bold;
     white-space: nowrap;
     cursor: pointer;
@@ -253,12 +253,12 @@ hr {
 /* ########### Home ########### */
 .home {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 8fr 1fr;
     margin: 20px 20px;
 }
 
 .home #profile-picture {
-    width: 16.5rem;
+    width: 12rem;
     height: max-content;
     border-radius: 50%;
     border: 3px dotted lightgray;
@@ -301,7 +301,7 @@ hr {
 }
 
 .home-g4 .navbar {
-    width: 16rem;
+    width: 12rem;
 }
 
 .home-g5 {
@@ -323,6 +323,16 @@ hr {
     font-size: 14px;
     list-style-type: square;
     margin: 5px 0px 0px 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.home-email {
+    font-size: 9pt;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid rgb(167, 167, 167);
+    margin-top: 5px;
 }
 
 /* ########### Home ########### */
@@ -433,7 +443,7 @@ hr {
 /* ########### Projects ########### */
 .card-project {
     display: grid;
-    grid-template-columns: 7fr 3fr;
+    grid-template-columns: 9fr 1fr;
 }
 
 .project-g1 {
@@ -621,6 +631,10 @@ hr {
         align-items: center;
     }
 
+    .home-email {
+        font-size: 7.5pt;
+    }
+
     .publication {
         grid-template-columns: 5fr 5fr;
     }
@@ -667,5 +681,9 @@ hr {
 @media (max-width: 480px) {
     .footer {
         font-size: 0.9rem;
+    }
+
+    .home-email {
+        font-size: 6pt;
     }
 }
