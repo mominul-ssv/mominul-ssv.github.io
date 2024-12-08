@@ -310,8 +310,9 @@ hr {
 }
 
 .home-g5 hr {
-    margin: 15px 5px;
-    border: 1px dotted gray;
+    margin: 10px 5px;
+    border-top: 2px solid lightgray;
+    border-bottom: 0px;
 }
 
 .home-g6 {
@@ -325,6 +326,20 @@ hr {
     margin: 5px 0px 0px 15px;
     padding-left: 10px;
     padding-top: 5px;
+}
+
+.home-hr {
+    margin: 20px 0px;
+    border-top: 2px solid lightgray;
+    border-bottom: 0px;
+}
+
+.home-bullet-background {
+    background-color: #ffffff;
+    padding-bottom: 15px;
+    border: 2px dotted lightgray;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .home-email {
