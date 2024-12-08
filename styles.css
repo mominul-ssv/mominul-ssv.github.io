@@ -653,7 +653,11 @@ hr {
     }
 
     .home-bullet {
-        font-size: 9pt;
+        font-size: 8pt;
+    }
+
+    .home-bullet-old {
+        font-size: 8pt;
     }
 
     .home-email {
