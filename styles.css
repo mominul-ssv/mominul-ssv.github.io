@@ -311,7 +311,7 @@ hr {
 
 .home-g5 hr {
     margin: 10px 5px;
-    border-top: 2px solid lightgray;
+    border-top: 2px dotted lightgray;
     border-bottom: 0px;
 }
 
@@ -322,7 +322,7 @@ hr {
 
 .home-hr {
     margin: 20px 0px;
-    border-top: 2px solid lightgray;
+    border-top: 2px dotted lightgray;
     border-bottom: 0px;
 }
 
@@ -331,23 +331,27 @@ hr {
     list-style-type: square;
     margin-left: 25px;
     padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.home-bullet-old {
+    font-size: 13px;
+    list-style-type: square;
+    margin-left: 25px;
     padding-bottom: 8px;
+    color: rgb(163, 163, 163);
 }
 
 .home-bullet-background {
-    background-color: #fffff4;
+    background-color: #fffff7;
     border: 2px dotted lightgray;
     margin-top: 10px;
-}
-
-.home-sup {
-    vertical-align: 2px;
 }
 
 .home-email {
     font-size: 9pt;
     padding: 5px;
-    background-color: #fffff4;
+    background-color: #fffff7;
     border: 1px solid rgb(167, 167, 167);
     margin-top: 5px;
 }
