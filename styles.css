@@ -320,32 +320,34 @@ hr {
     grid-row: 6;
 }
 
-.home-bullet {
-    font-size: 14px;
-    list-style-type: square;
-    margin: 5px 0px 0px 15px;
-    padding-left: 10px;
-    padding-top: 5px;
-}
-
 .home-hr {
     margin: 20px 0px;
     border-top: 2px solid lightgray;
     border-bottom: 0px;
 }
 
+.home-bullet {
+    font-size: 13px;
+    list-style-type: square;
+    margin-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
 .home-bullet-background {
-    background-color: #ffffff;
-    padding-bottom: 15px;
+    background-color: #fffff4;
     border: 2px dotted lightgray;
-    border-radius: 5px;
     margin-top: 10px;
+}
+
+.home-sup {
+    vertical-align: 2px;
 }
 
 .home-email {
     font-size: 9pt;
     padding: 5px;
-    background-color: white;
+    background-color: #fffff4;
     border: 1px solid rgb(167, 167, 167);
     margin-top: 5px;
 }
@@ -644,6 +646,10 @@ hr {
     .home-g6 {
         justify-content: center;
         align-items: center;
+    }
+
+    .home-bullet {
+        font-size: 9pt;
     }
 
     .home-email {
