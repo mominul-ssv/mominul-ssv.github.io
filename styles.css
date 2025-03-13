@@ -75,6 +75,7 @@ hr {
     border-radius: 3px;
     padding: 1px 10px;
     color: #03A9F4;
+    font-size: small;
 }
 
 .blue-link:hover {
@@ -84,10 +85,10 @@ hr {
 
 .green-link {
     border: 1px solid #4CAF50;
-    ;
     border-radius: 3px;
     padding: 1px 10px;
     color: #4CAF50;
+    font-size: small;
 }
 
 .green-link:hover {
@@ -97,10 +98,10 @@ hr {
 
 .purple-link {
     border: 1px solid #984caf;
-    ;
     border-radius: 3px;
     padding: 1px 10px;
     color: #984caf;
+    font-size: small;
 }
 
 .purple-link:hover {
@@ -385,7 +386,6 @@ hr {
     border-radius: 0;
     border: 2px solid rgb(213, 213, 213);
     padding: 10px;
-    margin-top: 15px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 3px;
@@ -393,14 +393,13 @@ hr {
 
 .publication {
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 9fr;
 }
 
 .pub-g2,
 .pub-g3,
 .pub-g4,
 .pub-g5 {
-    padding-bottom: 5px;
     padding-left: 20px;
 }
 
@@ -408,14 +407,21 @@ hr {
     grid-column: 1;
     grid-row: 1 / span 4;
     display: flex;
+    flex-direction: column;
     justify-content: left;
-    align-items: center;
+    gap: 10px;
+}
+
+.pub-g1 img {
+    width: 220px;
+    height: max-content;
+    cursor: pointer;
 }
 
 .pub-g2 {
     grid-column: 2;
     grid-row: 1;
-    font-size: medium;
+    font-size: small;
 
 }
 
@@ -432,31 +438,20 @@ hr {
 .pub-g5 {
     grid-column: 2;
     grid-row: 4;
+    padding-top: 20px;
     padding-bottom: 0px;
-}
-
-.pub-g6 {
-    grid-column: 3;
-    grid-row: 1 / span 4;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column-reverse;
-    padding-right: 10px;
-    color: gray;
 }
 
 .author {
     font-weight: bold;
-    text-decoration: underline;
 }
 
 .journal {
     font-style: italic;
 }
 
-.pub-img {
-    height: 124px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+.pub-space {
+    margin-top: 15px;
 }
 
 /* ########### Publications ########### */
@@ -674,6 +669,7 @@ hr {
     .pub-g5 {
         grid-column: 1 / span 2;
         padding-left: 0;
+        padding-bottom: 10px;
     }
 
     .pub-g1 {

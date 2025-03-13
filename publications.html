@@ -1,92 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Publications</title>
-    <link rel="icon" href="./assets/images/navbar/img-publications.png" type="image/png">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+              rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Publications</title>
+        <link rel="icon" href="./assets/images/navbar/img-publications.png" type="image/png">
+    </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CXYB2VFM8B"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXYB2VFM8B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-CXYB2VFM8B');
-</script>
+        gtag('config', 'G-CXYB2VFM8B');
+    </script>
 
-<body>
-    <header>
-        <div class="navbar">
-            <button onclick="goToPage('index.html')"><img class="navbar-img" src="./assets/images/navbar/img-home.png">
-                Home</button>
-            <button onclick="goToPage('publications.html')"><img class="navbar-img"
-                    src="./assets/images/navbar/img-publications.png">
-                Publications</button>
-            <button onclick="goToPage('projects.html')"><img class="navbar-img"
-                    src="./assets/images/navbar/img-projects.png">
-                Projects</button>
-            <button onclick="goToPage('notes.html')"><img class="navbar-img" src="./assets/images/navbar/img-notes.png">
-                Notes</button>
-            <button onclick="goToPage('courses.html')"><img class="navbar-img"
-                    src="./assets/images/navbar/img-courses.png">
-                Courses</button>
-        </div>
-    </header>
+    <body>
+        <header>
+            <div class="navbar">
+                <button onclick="goToPage('index.html')"><img class="navbar-img"
+                         src="./assets/images/navbar/img-home.png">
+                    Home</button>
+                <button onclick="goToPage('publications.html')"><img class="navbar-img"
+                         src="./assets/images/navbar/img-publications.png">
+                    Publications</button>
+                <button onclick="goToPage('projects.html')"><img class="navbar-img"
+                         src="./assets/images/navbar/img-projects.png">
+                    Projects</button>
+                <button onclick="goToPage('notes.html')"><img class="navbar-img"
+                         src="./assets/images/navbar/img-notes.png">
+                    Notes</button>
+                <button onclick="goToPage('courses.html')"><img class="navbar-img"
+                         src="./assets/images/navbar/img-courses.png">
+                    Courses</button>
+            </div>
+        </header>
 
-    <main>
-        <div class="card-body card-border">
-            <div class="publication">
-                <div class="pub-g1">
-                    <img src="./assets/images/publications/CIBM-april-2024.jpg" alt="cover_image" class="pub-img">
+        <main>
+            <div class="pub-space"></div>
+
+            <div class="card-body card-border">
+                <div class="publication">
+                    <div class="pub-g1">
+                        <div class="popup-trigger">
+                            <img src="./assets/images/img-cqcnn-arch.jpg" alt="cover_image" class="pub-img">
+                        </div>
+                        <div class="popup-trigger">
+                            <img src="./assets/images/img-3qubits-qc.jpg" alt="cover_image" class="pub-img">
+                        </div>
+                    </div>
+                    <div class="pub-g2">
+                        <p><b>CQ-CNN: Ahybrid classical-quantum convolutional neural network for
+                                Alzheimer’s disease detection using diffusion-generated and U-Net
+                                segmented 3D MRI</b>
+                        </p>
+                    </div>
+                    <div class="pub-g3">
+
+                        <span class="author">Mominul Islam</span>, Mohammad Junayed Hasan, M.R.C. Mahdy
+                    </div>
+                    <div class="pub-g4">
+
+                        <p class="journal">arXiv, 2025</p>
+                    </div>
+                    <div class="pub-g5">
+                        <a href="https://doi.org/10.48550/arXiv.2503.02345" target="_blank"><span
+                                  class="purple-link">HTML</span></a>
+                        <a href="https://github.com/mominul-ssv/alz-cq-cnn" target="_blank"><span
+                                  class="blue-link">Code</span></a>
+                    </div>
+
                 </div>
-                <div class="pub-g2">
-                    <p><b>CosSIF: Cosine similarity-based image filtering to overcome low inter-class variation in
-                            synthetic medical image datasets</b>
+            </div>
+
+            <div class="card-body card-border">
+                <div class="publication">
+                    <div class="pub-g1">
+                        <div class="popup-trigger">
+                            <img src="./assets/images/img-cossif-arch.jpg" alt="cover_image" class="pub-img">
+                        </div>
+                    </div>
+                    <div class="pub-g2">
+                        <p><b>CosSIF: Cosine similarity-based image filtering to overcome low inter-class variation in
+                                synthetic medical image datasets</b>
+                        </p>
+                    </div>
+                    <div class="pub-g3">
+                        <span class="author">Mominul Islam</span>, Hasib Zunair, Nabeel Mohammed
+                    </div>
+                    <div class="pub-g4">
+                        <p class="journal">Computers in Biology and Medicine, 2024</p>
+                    </div>
+                    <div class="pub-g5">
+                        <a href="https://doi.org/10.1016/j.compbiomed.2024.108317" target="_blank"><span
+                                  class="purple-link">HTML</span></a>
+                        <a href="https://github.com/mominul-ssv/cossif" target="_blank"><span
+                                  class="blue-link">Code</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- popup overlay -->
+            <div class="popup-overlay" id="popup">
+                <div class="popup-content">
+                    <button class="popup-close" id="close-button">&times;</button>
+                    <img src="" alt="Image" class="popup-image">
+                </div>
+            </div>
+            <!-- popup overlay -->
+
+            <div class="footer-gap">
+            </div>
+
+            <div class="footer">
+                <div class="copyright">
+                    <p>Website developed and maintained by
+                        <a href="https://github.com/mominul-ssv/mominul-ssv.github.io" target="_blank">©Mominul
+                            Islam</a>
                     </p>
                 </div>
-                <div class="pub-g3">
-                    <span class="author">Mominul Islam</span>, Hasib Zunair, Nabeel Mohammed
-                </div>
-                <div class="pub-g4">
-                    <p class="journal">Computers in Biology and Medicine</p>
-                </div>
-                <div class="pub-g5">
-                    <a href="https://doi.org/10.1016/j.compbiomed.2024.108317" target="_blank"><span
-                            class="purple-link">HTML</span></a>
-                    <a href="https://github.com/mominul-ssv/cossif" target="_blank"><span
-                            class="blue-link">Code</span></a>
-                </div>
-                <div class="pub-g6">
-                    <p>2024</p>
-                </div>
             </div>
-        </div>
 
-        <div class="footer-gap">
-        </div>
+        </main>
 
-        <div class="footer">
-            <div class="copyright">
-                <p>Website developed and maintained by
-                    <a href="https://github.com/mominul-ssv/mominul-ssv.github.io" target="_blank">©Mominul Islam</a>
-                </p>
-            </div>
-        </div>
-
-    </main>
-
-    <script src="./scripts.js"></script>
-</body>
+        <script src="./scripts.js"></script>
+    </body>
 
 </html>
