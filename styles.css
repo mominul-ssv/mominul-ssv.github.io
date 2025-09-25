@@ -115,6 +115,7 @@ hr {
     border-radius: 3px;
     padding: 1px 10px;
     color: #ec0000;
+    font-size: 12px;
 }
 
 .red-link:hover {
@@ -210,15 +211,8 @@ hr {
 }
 
 .img-link {
-    height: 16px;
+    height: 18px;
     vertical-align: middle;
-}
-
-.src-link {
-    vertical-align: middle;
-    font-size: 14px;
-    font-weight: bold;
-    color: black;
 }
 
 .linkedin-text {
@@ -234,19 +228,32 @@ hr {
 }
 
 .social a {
-    border-radius: 0;
+    border-radius: 5px;
 }
 
 .social a:nth-child(1) {
-    border: 1px solid rgb(66 133 244);
+    border: 2px solid rgb(66 133 244);
+    border-top: 5px solid rgb(66 133 244);
 }
 
 .social a:nth-child(2) {
-    border: 1px solid rgb(148, 198, 66);
+    border: 2px solid rgb(148, 198, 66);
+    border-top: 5px solid rgb(148, 198, 66);
+}
+
+.social a:nth-child(3) {
+    border: 2px solid black;
+    border-top: 5px solid black;
 }
 
 .social a:nth-child(4) {
-    border: 1px solid rgb(0, 114, 177);
+    border: 2px solid rgb(0, 114, 177);
+    border-top: 5px solid rgb(0, 114, 177);
+}
+
+.social a:nth-child(5) {
+    border: 2px solid gray;
+    border-bottom: 5px solid gray
 }
 
 /* ########### Navbar ########### */
@@ -298,7 +305,7 @@ hr {
     display: flex;
     justify-content: right;
     align-items: center;
-    padding-right: 5px;
+    padding: 10px;
 }
 
 .home-g4 .navbar {
@@ -347,14 +354,6 @@ hr {
     background-color: #fffff7;
     border: 2px dotted lightgray;
     margin-top: 10px;
-}
-
-.home-email {
-    font-size: 9pt;
-    padding: 5px;
-    background-color: #fffff7;
-    border: 1px solid rgb(167, 167, 167);
-    margin-top: 5px;
 }
 
 /* ########### Home ########### */
@@ -655,10 +654,6 @@ hr {
         font-size: 9pt;
     }
 
-    .home-email {
-        font-size: 9pt;
-    }
-
     .publication {
         grid-template-columns: 5fr 5fr;
     }
@@ -706,9 +701,5 @@ hr {
 @media (max-width: 480px) {
     .footer {
         font-size: 0.9rem;
-    }
-
-    .home-email {
-        font-size: 7.7pt;
     }
 }
