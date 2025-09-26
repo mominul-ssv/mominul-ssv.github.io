@@ -197,7 +197,7 @@ hr {
     border: 1px solid rgb(128, 128, 128);
     max-width: 100%;
     border-radius: 23px;
-    padding: 8px;
+    padding: 5px;
 }
 
 .navbar a:hover {
@@ -205,13 +205,13 @@ hr {
 }
 
 .navbar-img {
-    height: 22px;
+    height: 24px;
     width: auto;
     margin-right: 4px;
 }
 
 .img-link {
-    height: 18px;
+    height: 24px;
     vertical-align: middle;
 }
 
@@ -232,28 +232,38 @@ hr {
 }
 
 .social a:nth-child(1) {
-    border: 2px solid rgb(66 133 244);
-    border-top: 5px solid rgb(66 133 244);
+    border: 2px solid rgb(102, 163, 255);
+    border-top: 5px solid rgb(102, 163, 255);
 }
 
 .social a:nth-child(2) {
-    border: 2px solid rgb(148, 198, 66);
-    border-top: 5px solid rgb(148, 198, 66);
+    border: 2px solid rgb(178, 220, 120);
+    border-top: 5px solid rgb(178, 220, 120);
 }
 
 .social a:nth-child(3) {
-    border: 2px solid black;
-    border-top: 5px solid black;
+    border: 2px solid rgb(102, 220, 200);
+    border-top: 5px solid rgb(102, 220, 200);
 }
 
 .social a:nth-child(4) {
-    border: 2px solid rgb(0, 114, 177);
-    border-top: 5px solid rgb(0, 114, 177);
+    border: 2px solid rgb(255, 153, 80);
+    border-top: 5px solid rgb(255, 153, 80);
 }
 
 .social a:nth-child(5) {
-    border: 2px solid gray;
-    border-bottom: 5px solid gray
+    border: 2px solid rgb(100, 100, 100);
+    border-top: 5px solid rgb(100, 100, 100);
+}
+
+.social a:nth-child(6) {
+    border: 2px solid rgb(80, 160, 210);
+    border-top: 5px solid rgb(80, 160, 210);
+}
+
+.social a:nth-child(7) {
+    border: 2px solid rgb(170, 170, 170);
+    border-bottom: 5px solid rgb(170, 170, 170);
 }
 
 /* ########### Navbar ########### */
