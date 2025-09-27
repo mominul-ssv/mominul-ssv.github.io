@@ -27,144 +27,161 @@
 
 <body>
 
-    <div class="navbar">
-        <button onclick="goToPage('index.html')"><img class="navbar-img" src="./assets/images/navbar/img-home.png">
-            Home</button>
-        <button onclick="goToPage('publications.html')"><img class="navbar-img"
-                src="./assets/images/navbar/img-publications.png">
-            Publications</button>
-        <button onclick="goToPage('projects.html')"><img class="navbar-img"
-                src="./assets/images/navbar/img-projects.png">
-            Projects</button>
-        <button onclick="goToPage('notes.html')"><img class="navbar-img" src="./assets/images/navbar/img-notes.png">
-            Notes</button>
-    </div>
-
-    <div class="home">
-
-        <div class="home-g1">
-            <h1><b>Mominul</b> Islam</h1>
+    <header>
+        <div class="navbar">
+            <button data-page="index.html" onclick="goToPage('index.html')">
+                <img class="navbar-img" src="./assets/images/navbar/img-home.png">
+                <span class="nav-text">Home</span>
+            </button>
+            <button data-page="publications.html" onclick="goToPage('publications.html')">
+                <img class="navbar-img" src="./assets/images/navbar/img-publications.png">
+                <span class="nav-text">Publications</span>
+            </button>
+            <button data-page="projects.html" onclick="goToPage('projects.html')">
+                <img class="navbar-img" src="./assets/images/navbar/img-projects.png">
+                <span class="nav-text">Projects</span>
+            </button>
+            <button data-page="notes.html" onclick="goToPage('notes.html')">
+                <img class="navbar-img" src="./assets/images/navbar/img-notes.png">
+                <span class="nav-text">Notes</span>
+            </button>
         </div>
+    </header>
 
-        <div class="home-g2">
-            <p>
-                Hello there! Welcome to my website! Here, I share my academic <a href="./notes.html">notes</a>,
-                <a href="./projects.html">projects</a>, and <a href="./publications.html">publications</a>. You can
-                freely download my academic notes and access the codes for my
-                projects through the embedded links.
-            </p>
-            <br>
-            <p>
-                <u><b>A little about me:</b></u> I'm a Graduate Teaching Assistant (GTA) and currently pursuing an MSc
-                in CS at North South University (NSU). I have three years of teaching experience as a Lecturer, Lab
-                Instructor, and Teaching Assistant, and I’ve taught/mentored over 1,200 students. I am also a
-                collaborator at the <a href="https://sites.google.com/view/nsu-center-quantum-computing"
-                    target="_blank">NSU Center
-                    for
-                    Quantum Computing (NCQC)</a> and have published as the <i>first author</i> in Q1 journals,
-                including <i>Computers in Biology and Medicine</i> and <i>PLOS One</i>.
-            <p>
+    <main>
+        <div class="home">
+
+            <div class="home-g1">
+                <h1><b>Mominul</b> Islam</h1>
+            </div>
+
+            <div class="home-g2">
+                <p>
+                    Hello there! Welcome to my website! Here, I share my academic <a href="./notes.html">notes</a>,
+                    <a href="./projects.html">projects</a>, and <a href="./publications.html">publications</a>. You can
+                    freely download my academic notes and access the codes for my
+                    projects through the embedded links.
+                </p>
                 <br>
-            <p>
-                <u><b>Research Interests:</b></u>
-            <p>
-                <b>Biomedical AI & Vision:</b> Data-efficient medical imaging and clinical reasoning using
-                semi-supervised
-                learning, GANs,diffusion models, segmentation; exploring GNNs and digital twins for drug discovery and
-                treatment simulation.
-            </p>
-            <p>
-                <b>Generative & Quantum ML:</b> Transformer-based models for multilingual/domain-specific tasks with
-                instruction tuning and PEFT; interests in VLMs, RL, reward modeling, uncertainty-aware reasoning,
-                and hybrid classical–quantum architectures.
-            </p>
-            <p>
-                <b>AI & Human-Centered Research:</b>Agentic decision-making in generative AI, trustworthy reasoning via
-                RAG,
-                with broader focus on fairness, accessibility, and embedding cultural values
-                in AI.
-            </p>
-            </p>
-        </div>
+                <p>
+                    <u><b>A little about me:</b></u> I'm a Graduate Teaching Assistant (GTA) and currently pursuing an
+                    MSc
+                    in CS at North South University (NSU). I have three years of teaching experience as a Lecturer, Lab
+                    Instructor, and Teaching Assistant, and I’ve taught/mentored over 1,200 students. I am also a
+                    collaborator at the <a href="https://sites.google.com/view/nsu-center-quantum-computing"
+                        target="_blank">NSU
+                        Center
+                        for
+                        Quantum Computing (NCQC)</a> and have published as the <i>first author</i> in Q1 journals,
+                    including <i>Computers in Biology and Medicine</i> and <i>PLOS One</i>.
+                <p>
+                    <br>
+                <p>
+                    <u><b>Research Interests:</b></u>
+                <p>
+                    <b>Biomedical AI & Vision:</b> Data-efficient medical imaging and clinical reasoning using
+                    semi-supervised
+                    learning, GANs,diffusion models, segmentation; exploring GNNs and digital twins for drug discovery
+                    and
+                    treatment simulation.
+                </p>
+                <p>
+                    <b>Generative & Quantum ML:</b> Transformer-based models for multilingual/domain-specific tasks with
+                    instruction tuning and PEFT; interests in VLMs, RL, reward modeling, uncertainty-aware reasoning,
+                    and hybrid classical–quantum architectures.
+                </p>
+                <p>
+                    <b>AI & Human-Centered Research:</b>Agentic decision-making in generative AI, trustworthy reasoning
+                    via
+                    RAG,
+                    with broader focus on fairness, accessibility, and embedding cultural values
+                    in AI.
+                </p>
+                </p>
+            </div>
 
-        <div class="home-g3">
-            <img id="profile-picture" src="./assets/images/img-profile.jpg" alt="profile picture">
-        </div>
+            <div class="home-g3">
+                <img id="profile-picture" src="./assets/images/img-profile.jpg" alt="profile picture">
+            </div>
 
-        <div class="home-g4 navbar social">
-            <a href="https://scholar.google.com/citations?user=K1Mt42gAAAAJ&hl=en" target="_blank">
-                <img class="img-link" src="./assets/images/img-google-scholar.png">
-            </a>
-            <a href="https://orcid.org/0009-0001-6409-964X" target="_blank">
-                <img class="img-link" src="./assets/images/img-orcid.png">
-            </a>
-            <a href="https://www.researchgate.net/profile/Mominul-Islam-26" target="_blank">
-                <img class="img-link" src="./assets/images/img-research-gate.png">
-            </a>
-            <a href="https://www.scopus.com/authid/detail.uri?authorId=59749001200" target="_blank">
-                <img class="img-link" src="./assets/images/img-scopus.png">
-            </a>
-            <a href="https://github.com/mominul-ssv" target="_blank">
-                <img class="img-link" src="./assets/images/img-github.png">
-            </a>
-            <a href="https://www.linkedin.com/in/mominul-ssv/" target="_blank">
-                <img class="img-link" src="./assets/images/img-linkedin.png">
-            </a>
-            <!-- <a href="./assets/documents/cv/Mominul_Islam___CV.pdf" target="_blank">
+            <div class="home-g4 navbar social">
+                <a href="https://scholar.google.com/citations?user=K1Mt42gAAAAJ&hl=en" target="_blank">
+                    <img class="img-link" src="./assets/images/img-google-scholar.png">
+                </a>
+                <a href="https://orcid.org/0009-0001-6409-964X" target="_blank">
+                    <img class="img-link" src="./assets/images/img-orcid.png">
+                </a>
+                <a href="https://www.researchgate.net/profile/Mominul-Islam-26" target="_blank">
+                    <img class="img-link" src="./assets/images/img-research-gate.png">
+                </a>
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=59749001200" target="_blank">
+                    <img class="img-link" src="./assets/images/img-scopus.png">
+                </a>
+                <a href="https://github.com/mominul-ssv" target="_blank">
+                    <img class="img-link" src="./assets/images/img-github.png">
+                </a>
+                <a href="https://www.linkedin.com/in/mominul-ssv/" target="_blank">
+                    <img class="img-link" src="./assets/images/img-linkedin.png">
+                </a>
+                <!-- <a href="./assets/documents/cv/Mominul_Islam___CV.pdf" target="_blank">
                 <img class="img-link" src="./assets/images/img-resume.png">
             </a> -->
-        </div>
+            </div>
 
-        <div class="home-g5">
-            <hr>
-        </div>
+            <div class="home-g5">
+                <hr>
+            </div>
 
-        <div class="home-g6">
-            <p>
-                <u><b>Courses Taught:</b></u> Below are the courses I am currently teaching or have taught/mentored in
-                the
-                past
-                at NSU</span>.
-            </p>
-
-            <div class="home-bullet-background">
-
-                <p style="padding-left: 10px; padding-top: 5px; text-decoration: underline; font-weight: bold;">GTA/LI
+            <div class="home-g6">
+                <p>
+                    <u><b>Courses Taught:</b></u> Below are the courses I am currently teaching or have taught/mentored
+                    in
+                    the
+                    past
+                    at NSU</span>.
                 </p>
 
-                <ul class="home-bullet">
-                    <li>
-                        CSE115L Programming language I Lab
-                    </li>
-                    <li>
-                        CSE225L Data Structures and Algorithms Lab | <a
-                            href="https://www.youtube.com/watch?v=C10WS1xRX-w&list=PLt8xu8-Wlu7ku3tbh6-U72M1UZsrMzhmO"
-                            target="_blank">
-                            <span class="red-link">YouTube</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="home-bullet-background">
 
-                <p style="padding-left: 10px; color: gray; text-decoration: underline; font-weight: bold;">UGA/GA</p>
+                    <p style="padding-left: 10px; padding-top: 5px; text-decoration: underline; font-weight: bold;">
+                        GTA/LI
+                    </p>
 
-                <ul class="home-bullet-old">
-                    <li>
-                        CSE332: Computer Organization and Architecture
-                    </li>
-                    <li>
-                        CSE325: Concepts of Programming Language
-                    </li>
-                </ul>
+                    <ul class="home-bullet">
+                        <li>
+                            CSE115L Programming language I Lab
+                        </li>
+                        <li>
+                            CSE225L Data Structures and Algorithms Lab | <a
+                                href="https://www.youtube.com/watch?v=C10WS1xRX-w&list=PLt8xu8-Wlu7ku3tbh6-U72M1UZsrMzhmO"
+                                target="_blank">
+                                <span class="red-link">YouTube</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p style="padding-left: 10px; color: gray; text-decoration: underline; font-weight: bold;">UGA/GA
+                    </p>
+
+                    <ul class="home-bullet-old">
+                        <li>
+                            CSE332: Computer Organization and Architecture
+                        </li>
+                        <li>
+                            CSE325: Concepts of Programming Language
+                        </li>
+                    </ul>
+                </div>
+                <hr class="home-hr">
+                <div>
+                    <p>
+                        For any further queries, feel free to reach out to me at:
+                        <b>mominul[dot]islam05[at]northsouth[dot]edu</b>
+                </div>
             </div>
-            <hr class="home-hr">
-            <div>
-                <p>
-                    For any further queries, feel free to reach out to me at:
-                    <b>mominul[dot]islam05[at]northsouth[dot]edu</b>
-            </div>
+
         </div>
-
-    </div>
+    </main>
 
     <div class="footer-gap">
     </div>

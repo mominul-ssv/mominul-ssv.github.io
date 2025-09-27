@@ -25,20 +25,28 @@
 </script>
 
 <body>
+
     <header>
         <div class="navbar">
-            <button onclick="goToPage('index.html')"><img class="navbar-img" src="./assets/images/navbar/img-home.png">
-                Home</button>
-            <button onclick="goToPage('publications.html')"><img class="navbar-img"
-                    src="./assets/images/navbar/img-publications.png">
-                Publications</button>
-            <button onclick="goToPage('projects.html')"><img class="navbar-img"
-                    src="./assets/images/navbar/img-projects.png">
-                Projects</button>
-            <button onclick="goToPage('notes.html')"><img class="navbar-img" src="./assets/images/navbar/img-notes.png">
-                Notes</button>
+            <button data-page="index.html" onclick="goToPage('index.html')">
+                <img class="navbar-img" src="./assets/images/navbar/img-home.png">
+                <span class="nav-text">Home</span>
+            </button>
+            <button data-page="publications.html" onclick="goToPage('publications.html')">
+                <img class="navbar-img" src="./assets/images/navbar/img-publications.png">
+                <span class="nav-text">Publications</span>
+            </button>
+            <button data-page="projects.html" onclick="goToPage('projects.html')">
+                <img class="navbar-img" src="./assets/images/navbar/img-projects.png">
+                <span class="nav-text">Projects</span>
+            </button>
+            <button data-page="notes.html" onclick="goToPage('notes.html')">
+                <img class="navbar-img" src="./assets/images/navbar/img-notes.png">
+                <span class="nav-text">Notes</span>
+            </button>
         </div>
     </header>
+
     <main>
         <div class="card-body membrane">
             <h2 class="notes-head">

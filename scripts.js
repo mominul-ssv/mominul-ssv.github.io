@@ -30,3 +30,18 @@ if (popupOverlay) {
     });
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop(); // e.g., 'projects.html'
+
+    document.querySelectorAll(".navbar button").forEach(button => {
+        const buttonPage = button.getAttribute("data-page");
+        if (buttonPage === currentPage || (buttonPage === "index.html" && currentPage === "")) {
+            button.classList.add("active");
+        } else {
+            button.classList.remove("active");
+        }
+    });
+});
+
+
+
