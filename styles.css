@@ -645,11 +645,12 @@ hr {
         flex: 0 0 auto;
         padding: 10px;
         min-width: 48px;
-        /* Icon size */
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all 0.7s ease;
+        transition: flex-grow 0.7s ease, padding 0.7s ease;
+        will-change: flex-grow, padding;
+        transform: translateZ(0);
     }
 
     .navbar .nav-text {
