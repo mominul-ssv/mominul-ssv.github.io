@@ -649,7 +649,7 @@ hr {
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all 0.3s ease;
+        transition: all 0.7s ease;
     }
 
     .navbar .nav-text {
@@ -667,11 +667,6 @@ hr {
         justify-content: start;
         padding-left: 12px;
         padding-right: 12px;
-    }
-
-    .navbar button .navbar-img {
-        height: 24px;
-        width: auto;
     }
 
     .img-projects {
