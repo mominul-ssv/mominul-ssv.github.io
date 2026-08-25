@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400">
+  <rect x="0" y="0" width="900" height="400" fill="#fbfbfb"/>
+  <rect x="8" y="8" width="884" height="384" fill="none" stroke="#c9c9c9" stroke-width="3" stroke-dasharray="10 8" rx="4"/>
+  <g transform="translate(450,168)" text-anchor="middle">
+    <rect x="-46" y="-58" width="92" height="116" rx="6" fill="#ffffff" stroke="#a5b7bc" stroke-width="4"/>
+    <rect x="-46" y="-58" width="92" height="30" rx="6" fill="#a5b7bc"/>
+    <line x1="-28" y1="-4" x2="28" y2="-4" stroke="#c9c9c9" stroke-width="4"/>
+    <line x1="-28" y1="12" x2="28" y2="12" stroke="#c9c9c9" stroke-width="4"/>
+    <line x1="-28" y1="28" x2="10" y2="28" stroke="#c9c9c9" stroke-width="4"/>
+  </g>
+  <text x="450" y="274" text-anchor="middle" font-family="Source Code Pro, monospace" font-size="34" font-weight="700" fill="#6d6d6d">MANUSCRIPT</text>
+  <text x="450" y="312" text-anchor="middle" font-family="Source Code Pro, monospace" font-size="26" letter-spacing="2" fill="#a5b7bc">UNDER REVIEW</text>
+</svg>

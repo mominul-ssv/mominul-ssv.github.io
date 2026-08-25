@@ -352,6 +352,14 @@ hr {
     padding-bottom: 5px;
 }
 
+.home-bullet-spaced li {
+    margin-bottom: 8px;
+}
+
+.home-bullet-spaced li:last-child {
+    margin-bottom: 0;
+}
+
 .home-bullet-old {
     font-size: 13px;
     list-style-type: square;
@@ -427,21 +435,39 @@ hr {
     cursor: pointer;
 }
 
+.pub-year-divider {
+    margin: 20px 10px 8px 10px;
+    padding: 6px 14px;
+    border: 2px solid rgb(213, 213, 213);
+    border-left: 5px solid #333333;
+    border-radius: 3px;
+    background-color: #fbfbfb;
+    color: rgb(72, 72, 72);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.pub-year-divider:first-child {
+    margin-top: 0;
+}
+
 .pub-g2 {
     grid-column: 2;
     grid-row: 1;
-    font-size: small;
-
+    font-size: 12px;
 }
 
 .pub-g3 {
     grid-column: 2;
     grid-row: 2;
+    font-size: 12px;
 }
 
 .pub-g4 {
     grid-column: 2;
     grid-row: 3;
+    font-size: 12px;
 }
 
 .pub-g5 {
@@ -449,6 +475,12 @@ hr {
     grid-row: 4;
     padding-top: 20px;
     padding-bottom: 0px;
+    font-size: 12px;
+}
+
+.pub-g5 .purple-link,
+.pub-g5 .blue-link {
+    font-size: 12px;
 }
 
 .author {
@@ -461,6 +493,127 @@ hr {
 
 .pub-space {
     margin-top: 15px;
+}
+
+.pub-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin: 0 10px 15px 10px;
+}
+
+.pub-tabs button {
+    flex: 1 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: #fbfbfb;
+    color: rgb(72, 72, 72);
+    border: 0;
+    border-top: 2px solid gray;
+    border-left: 2px dotted gray;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pub-tabs button:hover {
+    background-color: #efefef;
+}
+
+.pub-tabs button.active {
+    background-color: #333333;
+    color: white;
+}
+
+.tab-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 26px;
+    height: 26px;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 8px;
+    border-radius: 13px;
+    margin-left: 10px;
+}
+
+.pub-tabs button.active .tab-count {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.pub-tab-content.hidden {
+    display: none;
+}
+
+.pub-empty {
+    text-align: center;
+    color: gray;
+    font-style: italic;
+    padding: 20px 10px;
+}
+
+.rank-badge {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 1px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.rank-q1 {
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+}
+
+.rank-q2 {
+    border: 1px solid #03A9F4;
+    color: #03A9F4;
+}
+
+.rank-a-star {
+    border: 1px solid #984caf;
+    color: #984caf;
+}
+
+.rank-a {
+    border: 1px solid #e5852a;
+    color: #e5852a;
+}
+
+.rank-b {
+    border: 1px solid #6d6d6d;
+    color: #6d6d6d;
+}
+
+.pub-pending {
+    color: gray;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.status-badge {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 1px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 6px;
+    vertical-align: middle;
+    border: 1px dashed #bababa;
+    color: #6d6d6d;
 }
 
 /* ########### Publications ########### */
