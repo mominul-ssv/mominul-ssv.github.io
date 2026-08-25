@@ -2,6 +2,9 @@ function goToPage(page) {
     window.location.href = page;
 }
 
+// Floating rotating globe widget, shown on every page
+import("./globe.js");
+
 function showPubTab(tab) {
     document.querySelectorAll('.pub-tab-content').forEach(section => {
         section.classList.toggle('hidden', section.id !== `tab-${tab}`);

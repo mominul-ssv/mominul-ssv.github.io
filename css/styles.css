@@ -186,6 +186,15 @@ hr {
     background-color: #efefef;
 }
 
+.navbar button.active {
+    background-color: #6d6d6d;
+    color: white;
+}
+
+.navbar button.active:hover {
+    background-color: #6d6d6d;
+}
+
 .navbar a {
     display: flex;
     align-items: center;
@@ -292,6 +301,7 @@ hr {
 
 .home-g1 {
     font-size: 1rem;
+    padding: 0;
 }
 
 .home-bio-row {
@@ -304,8 +314,9 @@ hr {
 
 .home-g3 {
     float: right;
-    width: 12rem;
     margin-left: 15px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .home-g4 {
@@ -317,10 +328,30 @@ hr {
     justify-content: right;
     align-items: center;
     padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .home-g4 .navbar {
     width: 12rem;
+}
+
+.home-globe-wrap {
+    display: block;
+    text-align: center;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+#home-globe {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px dotted lightgray;
+    background-color: #fbfbfb;
 }
 
 .home-g5 hr {
@@ -452,12 +483,14 @@ hr {
 .pub-g3 {
     grid-column: 2;
     grid-row: 2;
+    padding-top: 6px;
     font-size: 12px;
 }
 
 .pub-g4 {
     grid-column: 2;
     grid-row: 3;
+    padding-top: 6px;
     font-size: 12px;
 }
 
@@ -518,7 +551,7 @@ hr {
 }
 
 .pub-tabs button.active {
-    background-color: #333333;
+    background-color: #6d6d6d;
     color: white;
 }
 
@@ -659,10 +692,10 @@ hr {
 }
 
 .h3-projects {
-    padding: 5px 5px;
+    padding: 10px 15px 10px 15px;
     margin: 10px 0;
     font-weight: bold;
-    border: 2px solid black;
+    border: 2px solid lightgray;
 }
 
 /* ########### Projects ########### */
