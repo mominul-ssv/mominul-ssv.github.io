@@ -241,34 +241,28 @@ hr {
     border-radius: 5px;
 }
 
-.icon-scholar {
+a.icon-scholar {
     border: 2px solid rgb(102, 163, 255);
-    border-top: 5px solid rgb(102, 163, 255);
 }
 
-.icon-orcid {
+a.icon-orcid {
     border: 2px solid rgb(178, 220, 120);
-    border-top: 5px solid rgb(178, 220, 120);
 }
 
-.icon-researchgate {
+a.icon-researchgate {
     border: 2px solid rgb(102, 220, 200);
-    border-top: 5px solid rgb(102, 220, 200);
 }
 
-.icon-scopus {
+a.icon-scopus {
     border: 2px solid rgb(255, 153, 80);
-    border-top: 5px solid rgb(255, 153, 80);
 }
 
-.icon-github {
+a.icon-github {
     border: 2px solid rgb(100, 100, 100);
-    border-top: 5px solid rgb(100, 100, 100);
 }
 
-.icon-linkedin {
+a.icon-linkedin {
     border: 2px solid rgb(80, 160, 210);
-    border-top: 5px solid rgb(80, 160, 210);
 }
 
 .simple-nav {
@@ -289,8 +283,8 @@ hr {
 }
 
 .simple-nav-link.active {
-    color: #111;
-    border-bottom: 2px solid #6d6d6d;
+    color: #005837;
+    border-bottom: 2px solid #71C5E8;
 }
 
 .simple-nav-sep {
@@ -1000,34 +994,35 @@ hr {
     justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
-    margin: 10px auto 0 auto;
-    padding: 8px 14px;
-    max-width: 60%;
-    background-color: #fdf6e3;
-    border: 2px dashed #c9b98a;
+    margin: 10px 0 18px 0;
+    font-size: 15px;
+}
+
+.archive-banner span {
+    padding: 6px 16px;
+    background-color: #6b5b2a;
+    color: #fdf6e3;
     border-radius: 3px;
-    font-size: 12px;
-    color: #6b5b2a;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .archive-banner a {
+    padding: 7px 18px;
+    background-color: transparent;
+    border: 2px solid #6b5b2a;
+    border-radius: 20px;
     color: #6b5b2a;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
     white-space: nowrap;
+    transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .archive-banner a:hover {
-    color: #3d3313;
-}
-
-body.archive-mode {
-    background-color: #fdfaf2;
-}
-
-.archive-mode .card-body,
-.archive-mode .home-bullet-background {
-    background-color: #fffdf5;
+    background-color: #6b5b2a;
+    color: #fdf6e3;
 }
 
 .archive-hero {
@@ -1073,10 +1068,9 @@ body.archive-mode {
 
 @media (max-width: 768px) {
     .archive-banner {
-        max-width: 100%;
-        margin: 10px 10px 0 10px;
         justify-content: center;
         text-align: center;
+        padding: 10px 12px 18px 12px;
     }
 }
 
@@ -1215,7 +1209,7 @@ body.modern-theme {
     font-weight: 700;
     margin: 30px 0 14px 0;
     padding-bottom: 6px;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid #71C5E8;
 }
 
 .pub-list {
@@ -1225,8 +1219,8 @@ body.modern-theme {
 }
 
 .pub-entry {
-    margin-bottom: 20px;
-    padding-bottom: 18px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
     border-bottom: 1px dotted #ddd;
 }
 
@@ -1334,6 +1328,11 @@ body.modern-theme {
         position: static;
         flex: none;
         width: 100%;
+    }
+
+    .sidebar-globe,
+    #home-globe-slot {
+        display: none;
     }
 }
 
