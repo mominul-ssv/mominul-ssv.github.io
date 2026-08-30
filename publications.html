@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -25,214 +25,155 @@
     gtag('config', 'G-CXYB2VFM8B');
 </script>
 
-<body>
+<body class="modern-theme">
 
-    <header>
-        <div class="navbar">
-            <button data-page="index.html" onclick="goToPage('index.html')">
-                <img class="navbar-img" src="./assets/images/navbar/img-home.png">
-                <span class="nav-text">Home</span>
-            </button>
-            <button data-page="publications.html" onclick="goToPage('publications.html')">
-                <img class="navbar-img" src="./assets/images/navbar/img-publications.png">
-                <span class="nav-text">Publications</span>
-            </button>
-            <button data-page="projects.html" onclick="goToPage('projects.html')">
-                <img class="navbar-img" src="./assets/images/navbar/img-projects.png">
-                <span class="nav-text">Projects</span>
-            </button>
-            <button data-page="notes.html" onclick="goToPage('notes.html')">
-                <img class="navbar-img" src="./assets/images/navbar/img-notes.png">
-                <span class="nav-text">Notes</span>
-            </button>
-        </div>
-    </header>
+    <div class="site-layout">
+        <aside class="site-sidebar">
+            <h1 class="sidebar-name">Mominul Islam</h1>
+            <p class="sidebar-role">CS PhD Student, Tulane University</p>
 
-    <main>
-        <div class="pub-space"></div>
+            <p class="sidebar-label">Menu</p>
+            <nav class="sidebar-nav">
+                <a data-page="index.html" href="index.html" class="simple-nav-link">Home</a>
+                <a data-page="publications.html" href="publications.html" class="simple-nav-link">Publications</a>
+                <a href="archive/index.html" class="simple-nav-link">Back in Time</a>
+            </nav>
 
-        <div class="pub-tabs">
-            <button data-tab="journal" class="active" onclick="showPubTab('journal')">Journal <span
-                    class="tab-count"></span></button>
-            <button data-tab="conference" onclick="showPubTab('conference')">Conference <span
-                    class="tab-count"></span></button>
-            <button data-tab="workshop" onclick="showPubTab('workshop')">Workshop <span class="tab-count"></span></button>
-        </div>
+            <p class="sidebar-label">Research</p>
+            <p class="sidebar-social navbar social">
+                <a class="icon-scholar" href="https://scholar.google.com/citations?user=K1Mt42gAAAAJ&hl=en"
+                    target="_blank">
+                    <img class="img-link" src="./assets/images/img-google-scholar.png">
+                </a>
+                <a class="icon-orcid" href="https://orcid.org/0009-0001-6409-964X" target="_blank">
+                    <img class="img-link" src="./assets/images/img-orcid.png">
+                </a>
+                <a class="icon-researchgate" href="https://www.researchgate.net/profile/Mominul-Islam-26"
+                    target="_blank">
+                    <img class="img-link" src="./assets/images/img-research-gate.png">
+                </a>
+                <a class="icon-scopus" href="https://www.scopus.com/authid/detail.uri?authorId=59749001200"
+                    target="_blank">
+                    <img class="img-link" src="./assets/images/img-scopus.png">
+                </a>
+            </p>
 
-        <div id="tab-journal" class="pub-tab-content">
+            <p class="sidebar-label">Connect</p>
+            <p class="sidebar-social navbar social">
+                <a class="icon-github" href="https://github.com/mominul-ssv" target="_blank">
+                    <img class="img-link" src="./assets/images/img-github.png">
+                </a>
+                <a class="icon-linkedin" href="https://www.linkedin.com/in/mominul-ssv/" target="_blank">
+                    <img class="img-link" src="./assets/images/img-linkedin.png">
+                </a>
+            </p>
 
-            <div class="card-body card-border" data-year="2026">
-                <div class="publication">
-                    <div class="pub-g1">
-                        <div class="popup-trigger">
-                            <img src="./assets/images/img-placeholder-paper.svg" alt="cover_image" class="pub-img">
-                        </div>
-                    </div>
-                    <div class="pub-g2">
-                        <p><b>ARLGOS: Adaptive Traffic Signal Optimization Using Reinforcement Learning and Graph
-                                Neural Networks for Resource-Constrained Urban Environments</b>
-                        </p>
-                    </div>
-                    <div class="pub-g3">
-                        <span class="author">Mominul Islam</span>, Jilan Samiuddin, Benoit Boulet
-                    </div>
-                    <div class="pub-g4">
-                        <p class="journal">Results in Engineering, 2026 <span class="rank-badge rank-q1">Q1</span>
-                            <span class="status-badge">Under Review</span>
-                        </p>
-                    </div>
-                    <div class="pub-g5">
-                        <p class="pub-pending">Preprint &amp; code coming soon</p>
-                    </div>
-                </div>
-            </div>
+            <p class="sidebar-label">Contact</p>
+            <p class="sidebar-contact">
+                Office: Paul Hall 309<br>
+                Department of Computer Science<br>
+                Tulane University<br>
+                <b>mislam9[at]tulane[dot]edu</b>
+            </p>
 
-            <div class="card-body card-border" data-year="2025">
-                <div class="publication">
-                    <div class="pub-g1">
-                        <div class="popup-trigger">
-                            <img src="./assets/images/img-cqcnn-arch.jpg" alt="cover_image" class="pub-img">
-                        </div>
-                        <div class="popup-trigger">
-                            <img src="./assets/images/img-3qubits-qc.jpg" alt="cover_image" class="pub-img">
-                        </div>
-                    </div>
-                    <div class="pub-g2">
-                        <p><b>CQ-CNN: A lightweight hybrid classical–quantum convolutional neural network for
-                                Alzheimer’s disease detection using 3D
-                                structural brain MRI</b>
-                        </p>
-                    </div>
-                    <div class="pub-g3">
+            <div id="home-globe-slot" class="sidebar-globe"></div>
+        </aside>
 
-                        <span class="author">Mominul Islam</span>, Mohammad Junayed Hasan, M.R.C. Mahdy
-                    </div>
-                    <div class="pub-g4">
+        <div class="site-main">
+            <h2 class="section-heading">Conferences</h2>
 
-                        <p class="journal">PLOS One, 2025 <span class="rank-badge rank-q1">Q1</span></p>
-                    </div>
-                    <div class="pub-g5">
+            <ol class="pub-list" id="pub-list-conference">
+                <li class="pub-entry" data-year="2027">
+                    <p class="pub-title"><a href="#">CoBRA: Commuting-Block Re-uploading Ansatz for Efficient
+                            Quantum Gradient Computation</a></p>
+                    <p class="pub-authors">By <span class="pub-me">Mominul Islam</span>, Jiyuan Wang</p>
+                    <p class="pub-venue"><i>AAAI</i>, 2027. <span class="rank-badge rank-a-star">A*</span> <span
+                            class="status-badge">Under Review</span></p>
+                </li>
+
+                <li class="pub-entry" data-year="2026">
+                    <p class="pub-title"><a href="#">SEISMOS: A Statistical Signal Detection Framework for
+                            Semantic Chunking</a></p>
+                    <p class="pub-authors">By Ishtiak Mahmud Saad, <span class="pub-me">Mominul Islam</span>,
+                        Shahriyar Zaman Ridoy, Md Manjurul Ahsan, Azmine Toushik Wasi</p>
+                    <p class="pub-venue"><i>NeurIPS</i>, 2026. <span class="rank-badge rank-a-star">A*</span>
+                        <span class="status-badge">Under Review</span>
+                    </p>
+                </li>
+            </ol>
+
+            <h2 class="section-heading">Journals</h2>
+
+            <ol class="pub-list" id="pub-list-journal">
+                <li class="pub-entry" data-year="2026">
+                    <p class="pub-title"><a href="#">ARLGOS: Adaptive Traffic Signal Optimization Using
+                            Reinforcement Learning and Graph Neural Networks for Resource-Constrained Urban
+                            Environments</a></p>
+                    <p class="pub-authors">By <span class="pub-me">Mominul Islam</span>, Jilan Samiuddin, Benoit
+                        Boulet</p>
+                    <p class="pub-venue"><i>Results in Engineering</i>, 2026. <span
+                            class="rank-badge rank-q1">Q1</span> <span class="status-badge">Under Review</span>
+                    </p>
+                </li>
+
+                <li class="pub-entry" data-year="2025">
+                    <p class="pub-title"><a
+                            href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0331870"
+                            target="_blank">CQ-CNN: A lightweight hybrid classical&ndash;quantum convolutional
+                            neural network for Alzheimer's disease detection using 3D structural brain MRI</a></p>
+                    <p class="pub-authors">By <span class="pub-me">Mominul Islam</span>, Mohammad Junayed Hasan,
+                        M.R.C. Mahdy</p>
+                    <p class="pub-venue"><i>PLOS One</i>, 2025. <span class="rank-badge rank-q1">Q1</span></p>
+                    <p class="pub-links">
                         <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0331870"
                             target="_blank"><span class="purple-link">Paper</span></a>
                         <a href="https://github.com/mominul-ssv/alz-cq-cnn" target="_blank"><span
                                 class="blue-link">Code</span></a>
-                    </div>
+                    </p>
+                </li>
 
-                </div>
-            </div>
-
-            <div class="card-body card-border" data-year="2024">
-                <div class="publication">
-                    <div class="pub-g1">
-                        <div class="popup-trigger">
-                            <img src="./assets/images/img-cossif-arch.jpg" alt="cover_image" class="pub-img">
-                        </div>
-                    </div>
-                    <div class="pub-g2">
-                        <p><b>CosSIF: Cosine similarity-based image filtering to overcome low inter-class variation in
-                                synthetic medical image datasets</b>
-                        </p>
-                    </div>
-                    <div class="pub-g3">
-                        <span class="author">Mominul Islam</span>, Hasib Zunair, Nabeel Mohammed
-                    </div>
-                    <div class="pub-g4">
-                        <p class="journal">Computers in Biology and Medicine, 2024 <span
-                                class="rank-badge rank-q1">Q1</span></p>
-                    </div>
-                    <div class="pub-g5">
+                <li class="pub-entry" data-year="2024">
+                    <p class="pub-title"><a href="https://doi.org/10.1016/j.compbiomed.2024.108317"
+                            target="_blank">CosSIF: Cosine similarity-based image filtering to overcome low
+                            inter-class variation in synthetic medical image datasets</a></p>
+                    <p class="pub-authors">By <span class="pub-me">Mominul Islam</span>, Hasib Zunair, Nabeel
+                        Mohammed</p>
+                    <p class="pub-venue"><i>Computers in Biology and Medicine</i>, 2024. <span
+                            class="rank-badge rank-q1">Q1</span></p>
+                    <p class="pub-links">
                         <a href="https://doi.org/10.1016/j.compbiomed.2024.108317" target="_blank"><span
                                 class="purple-link">Paper</span></a>
                         <a href="https://github.com/mominul-ssv/cossif" target="_blank"><span
                                 class="blue-link">Code</span></a>
-                    </div>
-                </div>
-            </div>
+                    </p>
+                </li>
+            </ol>
 
+            <h2 class="section-heading">Workshops</h2>
+
+            <ol class="pub-list" id="pub-list-workshop">
+                <li class="pub-entry" data-year="2026">
+                    <p class="pub-title"><a href="#">Architecture-Induced Rank Reversal in Out-of-Distribution
+                            Detection</a></p>
+                    <p class="pub-authors">By Mustakim Ahmed Hasan, Ishtiak Mahmud Saad, <span
+                            class="pub-me">Mominul Islam</span></p>
+                    <p class="pub-venue"><i>NeurIPS 2026 Workshop TAE</i>. <span class="status-badge">Submission</span>
+                    </p>
+                </li>
+            </ol>
         </div>
+    </div>
 
-        <div id="tab-conference" class="pub-tab-content hidden">
+    <div class="footer-gap">
+    </div>
 
-            <div class="card-body card-border" data-year="2027">
-                <div class="publication">
-                    <div class="pub-g1">
-                        <div class="popup-trigger">
-                            <img src="./assets/images/img-placeholder-paper.svg" alt="cover_image" class="pub-img">
-                        </div>
-                    </div>
-                    <div class="pub-g2">
-                        <p><b>CoBRA: Commuting-Block Re-uploading Ansatz for Efficient Quantum Gradient
-                                Computation</b>
-                        </p>
-                    </div>
-                    <div class="pub-g3">
-                        <span class="author">Mominul Islam</span>, Jiyuan Wang
-                    </div>
-                    <div class="pub-g4">
-                        <p class="journal">AAAI, 2027 <span class="rank-badge rank-a-star">A*</span> <span
-                                class="status-badge">Under Review</span></p>
-                    </div>
-                    <div class="pub-g5">
-                        <p class="pub-pending">Preprint &amp; code coming soon</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-body card-border" data-year="2026">
-                <div class="publication">
-                    <div class="pub-g1">
-                        <div class="popup-trigger">
-                            <img src="./assets/images/img-placeholder-paper.svg" alt="cover_image" class="pub-img">
-                        </div>
-                    </div>
-                    <div class="pub-g2">
-                        <p><b>SEISMOS: A Statistical Signal Detection Framework for Semantic Chunking</b>
-                        </p>
-                    </div>
-                    <div class="pub-g3">
-                        Ishtiak Mahmud Saad, <span class="author">Mominul Islam</span>, Shahriyar Zaman Ridoy, Md
-                        Manjurul Ahsan, Azmine Toushik Wasi
-                    </div>
-                    <div class="pub-g4">
-                        <p class="journal">NeurIPS, 2026 <span class="rank-badge rank-a-star">A*</span> <span
-                                class="status-badge">Under Review</span></p>
-                    </div>
-                    <div class="pub-g5">
-                        <p class="pub-pending">Preprint &amp; code coming soon</p>
-                    </div>
-                </div>
-            </div>
-
+    <div class="footer">
+        <div class="copyright">
+            <p>Website developed and maintained by
+                <a href="https://github.com/mominul-ssv/mominul-ssv.github.io" target="_blank">©Mominul Islam</a>
+            </p>
         </div>
-
-        <div id="tab-workshop" class="pub-tab-content hidden">
-            <div class="card-body card-border">
-                <p class="pub-empty">Coming soon.</p>
-            </div>
-        </div>
-
-        <!-- popup overlay -->
-        <div class="popup-overlay" id="popup">
-            <div class="popup-content">
-                <button class="popup-close" id="close-button">&times;</button>
-                <img src="" alt="Image" class="popup-image">
-            </div>
-        </div>
-        <!-- popup overlay -->
-
-        <div class="footer-gap">
-        </div>
-
-        <div class="footer">
-            <div class="copyright">
-                <p>Website developed and maintained by
-                    <a href="https://github.com/mominul-ssv/mominul-ssv.github.io" target="_blank">©Mominul
-                        Islam</a>
-                </p>
-            </div>
-        </div>
-
-    </main>
+    </div>
 
     <script src="./scripts.js"></script>
 </body>

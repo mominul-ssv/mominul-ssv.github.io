@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -25,180 +25,134 @@
     gtag('config', 'G-CXYB2VFM8B');
 </script>
 
-<body>
+<body class="modern-theme">
 
-    <header>
-        <div class="navbar">
-            <button data-page="index.html" onclick="goToPage('index.html')">
-                <img class="navbar-img" src="./assets/images/navbar/img-home.png">
-                <span class="nav-text">Home</span>
-            </button>
-            <button data-page="publications.html" onclick="goToPage('publications.html')">
-                <img class="navbar-img" src="./assets/images/navbar/img-publications.png">
-                <span class="nav-text">Publications</span>
-            </button>
-            <button data-page="projects.html" onclick="goToPage('projects.html')">
-                <img class="navbar-img" src="./assets/images/navbar/img-projects.png">
-                <span class="nav-text">Projects</span>
-            </button>
-            <button data-page="notes.html" onclick="goToPage('notes.html')">
-                <img class="navbar-img" src="./assets/images/navbar/img-notes.png">
-                <span class="nav-text">Notes</span>
-            </button>
-        </div>
-    </header>
+    <div class="site-layout">
+        <aside class="site-sidebar">
+            <h1 class="sidebar-name">Mominul Islam</h1>
+            <p class="sidebar-role">CS PhD Student, Tulane University</p>
 
-    <main>
-        <div class="home">
+            <p class="sidebar-label">Menu</p>
+            <nav class="sidebar-nav">
+                <a data-page="index.html" href="index.html" class="simple-nav-link">Home</a>
+                <a data-page="publications.html" href="publications.html" class="simple-nav-link">Publications</a>
+                <a href="archive/index.html" class="simple-nav-link">Back in Time</a>
+            </nav>
 
-            <div class="home-bio-row">
+            <p class="sidebar-label">Research</p>
+            <p class="sidebar-social navbar social">
+                <a class="icon-scholar" href="https://scholar.google.com/citations?user=K1Mt42gAAAAJ&hl=en"
+                    target="_blank">
+                    <img class="img-link" src="./assets/images/img-google-scholar.png">
+                </a>
+                <a class="icon-orcid" href="https://orcid.org/0009-0001-6409-964X" target="_blank">
+                    <img class="img-link" src="./assets/images/img-orcid.png">
+                </a>
+                <a class="icon-researchgate" href="https://www.researchgate.net/profile/Mominul-Islam-26"
+                    target="_blank">
+                    <img class="img-link" src="./assets/images/img-research-gate.png">
+                </a>
+                <a class="icon-scopus" href="https://www.scopus.com/authid/detail.uri?authorId=59749001200"
+                    target="_blank">
+                    <img class="img-link" src="./assets/images/img-scopus.png">
+                </a>
+            </p>
 
-                <div class="home-g3">
-                    <img id="profile-picture" src="./assets/images/img-profile.jpg" alt="profile picture">
-                </div>
+            <p class="sidebar-label">Connect</p>
+            <p class="sidebar-social navbar social">
+                <a class="icon-github" href="https://github.com/mominul-ssv" target="_blank">
+                    <img class="img-link" src="./assets/images/img-github.png">
+                </a>
+                <a class="icon-linkedin" href="https://www.linkedin.com/in/mominul-ssv/" target="_blank">
+                    <img class="img-link" src="./assets/images/img-linkedin.png">
+                </a>
+            </p>
 
-                <div class="home-g4 navbar social">
-                    <a href="https://scholar.google.com/citations?user=K1Mt42gAAAAJ&hl=en" target="_blank">
-                        <img class="img-link" src="./assets/images/img-google-scholar.png">
-                    </a>
-                    <a href="https://orcid.org/0009-0001-6409-964X" target="_blank">
-                        <img class="img-link" src="./assets/images/img-orcid.png">
-                    </a>
-                    <a href="https://www.researchgate.net/profile/Mominul-Islam-26" target="_blank">
-                        <img class="img-link" src="./assets/images/img-research-gate.png">
-                    </a>
-                    <a href="https://www.scopus.com/authid/detail.uri?authorId=59749001200" target="_blank">
-                        <img class="img-link" src="./assets/images/img-scopus.png">
-                    </a>
-                    <a href="https://github.com/mominul-ssv" target="_blank">
-                        <img class="img-link" src="./assets/images/img-github.png">
-                    </a>
-                    <a href="https://www.linkedin.com/in/mominul-ssv/" target="_blank">
-                        <img class="img-link" src="./assets/images/img-linkedin.png">
-                    </a>
-                    <!-- <a href="./assets/documents/cv/Mominul_Islam___CV.pdf" target="_blank">
-                    <img class="img-link" src="./assets/images/img-resume.png">
-                </a> -->
-                </div>
+            <p class="sidebar-label">Contact</p>
+            <p class="sidebar-contact">
+                Office: Paul Hall 309<br>
+                Department of Computer Science<br>
+                Tulane University<br>
+                <b>mislam9[at]tulane[dot]edu</b>
+            </p>
 
-                <div class="home-g2">
-                    <div class="home-g1">
-                        <h1><b>Mominul</b> Islam</h1>
-                    </div>
-                    <p>
-                        Hello there! Welcome to my website! Here, I share my academic <a href="./notes.html">notes</a>,
-                        <a href="./projects.html">projects</a>, and <a href="./publications.html">publications</a>. You
-                        can
-                        freely download my academic notes and access the codes for my
-                        projects through the embedded links.
-                    </p>
-                    <br>
-                    <p>
-                        <u><b>A little about me:</b></u> I'm a PhD student in Computer Science at Tulane University,
-                        advised by <a href="https://www.cs.tulane.edu/~wjiyuan/" target="_blank">Dr. Jiyuan Wang</a>.
-                        I completed my BSc in Computer Science and Engineering at North
-                        South
-                        University. I have experience as a Lecturer, Lab Instructor, and Teaching Assistant and have
-                        taught/mentored over 1,200 students. I also collaborated with the <a
-                            href="https://sites.google.com/view/nsu-center-quantum-computing"
-                            target="_blank">NSU Center
-                            for Quantum Computing</a>.
-                    <p>
-                        <br>
-                    <p>
-                        <u><b>Research Interests:</b></u>
-                    </p>
+            <div id="home-globe-slot" class="sidebar-globe"></div>
+        </aside>
 
-                    <div class="home-bullet-background">
-
-                        <p
-                            style="padding-left: 10px; padding-top: 5px; text-decoration: underline; font-weight: bold;">
-                            Current Focus
-                        </p>
-
-                        <ul class="home-bullet home-bullet-spaced">
-                            <li>
-                                <b>Quantum Machine Learning:</b> Efficient quantum gradient computation,
-                                parameterized quantum circuit optimization, hybrid classical–quantum neural
-                                networks.
-                            </li>
-                            <li>
-                                <b>ML/RL for Quantum Systems:</b> Machine learning and reinforcement learning for
-                                quantum error correction, noise-aware optimization, and quantum system calibration.
-                            </li>
-                        </ul>
-
-                        <p style="padding-left: 10px; text-decoration: underline; font-weight: bold;">
-                            Other Interests
-                        </p>
-
-                        <ul class="home-bullet home-bullet-spaced">
-                            <li>
-                                <b>Natural Language Processing:</b> Semantic representation, text segmentation,
-                                information retrieval, and retrieval-augmented generation.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
+        <div class="site-main">
+            <div class="profile-photo-wrap">
+                <img src="./assets/images/img-profile.jpg" alt="Mominul Islam" class="profile-photo">
             </div>
 
-            <div class="home-g5">
-                <hr>
-            </div>
-
-            <div class="home-g6">
+            <div class="bio">
                 <p>
-                    <u><b>Courses Taught:</b></u> Below are courses I taught or mentored at NSU.
+                    Hello there! Welcome to my website! I'm a PhD student in Computer Science at Tulane
+                    University, advised by <a href="https://www.cs.tulane.edu/~wjiyuan/" target="_blank">Dr.
+                        Jiyuan Wang</a>. My research interests include <b>quantum computing</b>, with a focus on
+                    parameterized quantum circuit optimization, classical machine learning methods for quantum
+                    optimization, quantum chemistry, and noise aware optimization for near term quantum devices.
+                    I also retain a broader interest in natural language processing, particularly semantic
+                    representation and retrieval augmented generation.
                 </p>
-
-                <div class="home-bullet-background">
-
-                    <p style="padding-left: 10px; padding-top: 5px; text-decoration: underline; font-weight: bold;">
-                        GTA/LI
-                    </p>
-
-                    <ul class="home-bullet">
-                        <li>
-                            CSE115L Programming language I Lab
-                        </li>
-                        <li>
-                            CSE225L Data Structures and Algorithms Lab | <a
-                                href="https://www.youtube.com/watch?v=C10WS1xRX-w&list=PLt8xu8-Wlu7ku3tbh6-U72M1UZsrMzhmO"
-                                target="_blank">
-                                <span class="red-link">YouTube</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <p style="padding-left: 10px; color: gray; text-decoration: underline; font-weight: bold;">UGA/GA
-                    </p>
-
-                    <ul class="home-bullet-old">
-                        <li>
-                            CSE332: Computer Organization and Architecture
-                        </li>
-                        <li>
-                            CSE325: Concepts of Programming Language
-                        </li>
-                    </ul>
-                </div>
-                <hr class="home-hr">
-                <div id="home-contact">
-                    <p>
-                        For any further queries, feel free to reach out to me at:
-                    </p>
-                    <div class="home-bullet-background">
-                        <p style="padding: 10px;"><b>mislam9[at]tulane[dot]edu</b></p>
-                    </div>
-                    <div class="home-bullet-background">
-                        <p style="padding: 10px;"><b>mominul[dot]islam05[at]northsouth[dot]edu</b></p>
-                    </div>
-                </div>
+                <p>
+                    Before Tulane, I completed my BSc in Computer Science and Engineering at North South
+                    University. I have experience as a Lecturer, Lab Instructor, and Teaching Assistant, having
+                    taught and mentored over 1,200 students, and I collaborated with the
+                    <a href="https://sites.google.com/view/nsu-center-quantum-computing" target="_blank">NSU
+                        Center for Quantum Computing</a>. You can also step
+                    <a href="archive/index.html">back in time</a> to see the projects and course notes from those
+                    years.
+                </p>
             </div>
 
+            <h2 class="section-heading">Selected Publications</h2>
+            <ol class="pub-list">
+                <li class="pub-entry">
+                    <p class="pub-title"><a href="publications.html">CoBRA: Commuting-Block Re-uploading Ansatz
+                            for Efficient Quantum Gradient Computation</a></p>
+                    <p class="pub-authors">By Mominul Islam, Jiyuan Wang</p>
+                    <p class="pub-venue"><i>AAAI</i>, 2027. <span class="rank-badge rank-a-star">A*</span> <span
+                            class="status-badge">Under Review</span></p>
+                </li>
+                <li class="pub-entry">
+                    <p class="pub-title"><a href="publications.html">SEISMOS: A Statistical Signal Detection
+                            Framework for Semantic Chunking</a></p>
+                    <p class="pub-authors">By Ishtiak Mahmud Saad, Mominul Islam, Shahriyar Zaman Ridoy, Md
+                        Manjurul Ahsan, Azmine Toushik Wasi</p>
+                    <p class="pub-venue"><i>NeurIPS</i>, 2026. <span class="rank-badge rank-a-star">A*</span>
+                        <span class="status-badge">Under Review</span>
+                    </p>
+                </li>
+                <li class="pub-entry">
+                    <p class="pub-title"><a href="publications.html">ARLGOS: Adaptive Traffic Signal Optimization
+                            Using Reinforcement Learning and Graph Neural Networks for Resource-Constrained Urban
+                            Environments</a></p>
+                    <p class="pub-authors">By Mominul Islam, Jilan Samiuddin, Benoit Boulet</p>
+                    <p class="pub-venue"><i>Results in Engineering</i>, 2026. <span
+                            class="rank-badge rank-q1">Q1</span> <span class="status-badge">Under Review</span>
+                    </p>
+                </li>
+            </ol>
+            <p class="home-pub-more"><a href="publications.html">View all publications &rarr;</a></p>
+
+            <h2 class="section-heading">Peer Review</h2>
+            <p class="review-summary">4 reviews for 3 journals.</p>
+            <ul class="review-list">
+                <li class="review-entry">
+                    <p class="review-journal">International Journal of Machine Learning and Cybernetics</p>
+                    <p class="review-meta">ISSN 1868-808X. 1 review, 2026. Springer Nature.</p>
+                </li>
+                <li class="review-entry">
+                    <p class="review-journal">Quantum Machine Intelligence</p>
+                    <p class="review-meta">ISSN 2524-4914. 1 review, 2026. Springer Nature.</p>
+                </li>
+                <li class="review-entry">
+                    <p class="review-journal">SN Computer Science</p>
+                    <p class="review-meta">ISSN 2661-8907. 2 reviews, 2026. Springer Nature.</p>
+                </li>
+            </ul>
         </div>
-    </main>
+    </div>
 
     <div class="footer-gap">
     </div>
@@ -213,3 +167,5 @@
 
     <script src="./scripts.js"></script>
 </body>
+
+</html>

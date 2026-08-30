@@ -1,18 +1,12 @@
 import { geoOrthographic, geoPath, geoGraticule10, geoDistance } from "https://esm.sh/d3-geo@3";
 import { feature } from "https://esm.sh/topojson-client@3";
 
-const contactAnchor = document.getElementById("home-contact");
+const globeSlot = document.getElementById("home-globe-slot");
 
 let canvas = null;
 
-if (contactAnchor) {
-    const wrap = document.createElement("div");
-    wrap.className = "home-globe-wrap";
-    wrap.innerHTML = '<canvas id="home-globe"></canvas>';
-    const divider = document.createElement("hr");
-    divider.className = "home-hr";
-    contactAnchor.insertAdjacentElement("afterend", wrap);
-    contactAnchor.insertAdjacentElement("afterend", divider);
+if (globeSlot) {
+    globeSlot.innerHTML = '<canvas id="home-globe"></canvas>';
     canvas = document.getElementById("home-globe");
 }
 

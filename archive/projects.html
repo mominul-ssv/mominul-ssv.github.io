@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Projects</title>
-    <link rel="icon" href="./assets/images/navbar/img-projects.png" type="image/png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Archive Projects</title>
+    <link rel="icon" href="../assets/images/navbar/img-projects.png" type="image/png">
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -25,32 +25,31 @@
     gtag('config', 'G-CXYB2VFM8B');
 </script>
 
-<body>
+<body class="archive-mode">
+
+    <div class="archive-banner">
+        <span>&#128339; Archive &mdash; NSU Era</span>
+        <a href="../index.html">Return to current site &rarr;</a>
+    </div>
 
     <header>
         <div class="navbar">
             <button data-page="index.html" onclick="goToPage('index.html')">
-                <img class="navbar-img" src="./assets/images/navbar/img-home.png">
-                <span class="nav-text">Home</span>
-            </button>
-            <button data-page="publications.html" onclick="goToPage('publications.html')">
-                <img class="navbar-img" src="./assets/images/navbar/img-publications.png">
-                <span class="nav-text">Publications</span>
+                <img class="navbar-img" src="../assets/images/navbar/img-home.png">
+                <span class="nav-text">Home (Old)</span>
             </button>
             <button data-page="projects.html" onclick="goToPage('projects.html')">
-                <img class="navbar-img" src="./assets/images/navbar/img-projects.png">
+                <img class="navbar-img" src="../assets/images/navbar/img-projects.png">
                 <span class="nav-text">Projects</span>
             </button>
             <button data-page="notes.html" onclick="goToPage('notes.html')">
-                <img class="navbar-img" src="./assets/images/navbar/img-notes.png">
+                <img class="navbar-img" src="../assets/images/navbar/img-notes.png">
                 <span class="nav-text">Notes</span>
             </button>
         </div>
     </header>
 
     <main>
-
-        <h3 class="h3-projects">Undergraduate Projects</h3>
 
         <h2 class="h2-projects">Web Application Projects</h2>
 
@@ -80,17 +79,17 @@
                 <div class="popup-trigger">
                     <p>Architecture</p>
                     <br>
-                    <img src="./assets/images/projects/cse482/img-cse482-arch.png">
+                    <img src="../assets/images/projects/cse482/img-cse482-arch.png">
                 </div>
                 <div class="popup-trigger">
                     <p>ERD</p>
                     <br>
-                    <img src="./assets/images/projects/cse482/img-cse482-erd.png">
+                    <img src="../assets/images/projects/cse482/img-cse482-erd.png">
                 </div>
                 <div class="popup-trigger">
                     <p>Login/Registration</p>
                     <br>
-                    <img src="./assets/images/projects/cse482/img-cse482-log-reg.png">
+                    <img src="../assets/images/projects/cse482/img-cse482-log-reg.png">
                 </div>
             </div>
         </div>
@@ -121,27 +120,27 @@
                 <div class="popup-trigger">
                     <p>Schema</p>
                     <br>
-                    <img src="./assets/images/projects/cse327/img-cse327-schema-diagram.png">
+                    <img src="../assets/images/projects/cse327/img-cse327-schema-diagram.png">
                 </div>
                 <div class="popup-trigger">
                     <p>Login Page</p>
                     <br>
-                    <img src="./assets/images/projects/cse327/img-cse327-login.png">
+                    <img src="../assets/images/projects/cse327/img-cse327-login.png">
                 </div>
                 <div class="popup-trigger">
                     <p>Student Portal</p>
                     <br>
-                    <img src="./assets/images/projects/cse327/img-cse327-student.png">
+                    <img src="../assets/images/projects/cse327/img-cse327-student.png">
                 </div>
                 <div class="popup-trigger">
                     <p>Faculty Portal</p>
                     <br>
-                    <img src="./assets/images/projects/cse327/img-cse327-faculty.png">
+                    <img src="../assets/images/projects/cse327/img-cse327-faculty.png">
                 </div>
                 <div class="popup-trigger">
                     <p>Admin Portal</p>
                     <br>
-                    <img src="./assets/images/projects/cse327/img-cse327-admin.png">
+                    <img src="../assets/images/projects/cse327/img-cse327-admin.png">
                 </div>
             </div>
         </div>
@@ -173,26 +172,25 @@
                 <div class="popup-trigger">
                     <p>Datapath</p>
                     <br>
-                    <img src="./assets/images/projects/cse332/img-cse332-datapath.png">
+                    <img src="../assets/images/projects/cse332/img-cse332-datapath.png">
                 </div>
                 <div class="popup-trigger">
                     <p>Control Unit</p>
                     <br>
-                    <img src="./assets/images/projects/cse332/img-cse332-control-unit.png">
+                    <img src="../assets/images/projects/cse332/img-cse332-control-unit.png">
                 </div>
                 <div class="popup-trigger">
                     <p>Register</p>
                     <br>
-                    <img src="./assets/images/projects/cse332/img-cse332-reg.png">
+                    <img src="../assets/images/projects/cse332/img-cse332-reg.png">
                 </div>
                 <div class="popup-trigger">
                     <p>ALU</p>
                     <br>
-                    <img src="./assets/images/projects/cse332/img-cse332-alu.png">
+                    <img src="../assets/images/projects/cse332/img-cse332-alu.png">
                 </div>
             </div>
         </div>
-
         <!-- popup overlay -->
         <div class="popup-overlay" id="popup">
             <div class="popup-content">
@@ -216,7 +214,7 @@
 
     </main>
 
-    <script src="./scripts.js"></script>
+    <script src="../scripts.js"></script>
 </body>
 
 </html>

@@ -241,39 +241,61 @@ hr {
     border-radius: 5px;
 }
 
-.social a:nth-child(1) {
+.icon-scholar {
     border: 2px solid rgb(102, 163, 255);
     border-top: 5px solid rgb(102, 163, 255);
 }
 
-.social a:nth-child(2) {
+.icon-orcid {
     border: 2px solid rgb(178, 220, 120);
     border-top: 5px solid rgb(178, 220, 120);
 }
 
-.social a:nth-child(3) {
+.icon-researchgate {
     border: 2px solid rgb(102, 220, 200);
     border-top: 5px solid rgb(102, 220, 200);
 }
 
-.social a:nth-child(4) {
+.icon-scopus {
     border: 2px solid rgb(255, 153, 80);
     border-top: 5px solid rgb(255, 153, 80);
 }
 
-.social a:nth-child(5) {
+.icon-github {
     border: 2px solid rgb(100, 100, 100);
     border-top: 5px solid rgb(100, 100, 100);
 }
 
-.social a:nth-child(6) {
+.icon-linkedin {
     border: 2px solid rgb(80, 160, 210);
     border-top: 5px solid rgb(80, 160, 210);
 }
 
-.social a:nth-child(7) {
-    border: 2px solid rgb(170, 170, 170);
-    border-bottom: 5px solid rgb(170, 170, 170);
+.simple-nav {
+    padding: 18px 10px 10px 10px;
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 14px;
+}
+
+.simple-nav-link {
+    color: rgb(72, 72, 72);
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+
+.simple-nav-link:hover {
+    color: #328eea;
+}
+
+.simple-nav-link.active {
+    color: #111;
+    border-bottom: 2px solid #6d6d6d;
+}
+
+.simple-nav-sep {
+    margin: 0 8px;
+    color: lightgray;
 }
 
 /* ########### Navbar ########### */
@@ -302,6 +324,15 @@ hr {
 .home-g1 {
     font-size: 1rem;
     padding: 0;
+}
+
+.home-eyebrow {
+    margin-top: 2px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: gray;
+    font-weight: bold;
 }
 
 .home-bio-row {
@@ -336,11 +367,18 @@ hr {
     width: 12rem;
 }
 
-.home-globe-wrap {
+.home-footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#home-globe-slot {
     display: block;
-    text-align: center;
-    margin: 15px 0 0 0;
-    padding: 0;
 }
 
 #home-globe {
@@ -380,6 +418,12 @@ hr {
 
 .home-bullet-spaced li:last-child {
     margin-bottom: 0;
+}
+
+.home-pub-more {
+    text-align: right;
+    padding: 5px 10px 0 10px;
+    font-size: 12px;
 }
 
 .home-bullet-old {
@@ -947,4 +991,360 @@ hr {
     .footer {
         font-size: 0.9rem;
     }
+}
+
+/* ########### Archive ########### */
+.archive-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px auto 0 auto;
+    padding: 8px 14px;
+    max-width: 60%;
+    background-color: #fdf6e3;
+    border: 2px dashed #c9b98a;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #6b5b2a;
+}
+
+.archive-banner a {
+    color: #6b5b2a;
+    font-weight: bold;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.archive-banner a:hover {
+    color: #3d3313;
+}
+
+body.archive-mode {
+    background-color: #fdfaf2;
+}
+
+.archive-mode .card-body,
+.archive-mode .home-bullet-background {
+    background-color: #fffdf5;
+}
+
+.archive-hero {
+    padding: 15px 5px 0 5px;
+}
+
+.archive-subtitle {
+    font-style: italic;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.archive-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 5px;
+}
+
+.archive-link-card {
+    flex: 1 1 240px;
+    display: block;
+    color: inherit;
+    cursor: pointer;
+}
+
+.archive-link-card:hover {
+    background-color: #fffdf5;
+    border-color: #c9b98a;
+}
+
+.archive-link-card b {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.archive-link-card p {
+    font-size: 12px;
+    color: rgb(72, 72, 72);
+}
+
+@media (max-width: 768px) {
+    .archive-banner {
+        max-width: 100%;
+        margin: 10px 10px 0 10px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* ########### Back in Time button ########### */
+.back-in-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    padding: 8px 14px;
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #6b5b2a;
+    background-color: #fdf6e3;
+    border: 2px dashed #c9b98a;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-in-time:hover {
+    background-color: #f7ecc9;
+    color: #3d3313;
+}
+
+/* ########### Modern Academic Theme (current site) ########### */
+body.modern-theme {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    width: 90%;
+    max-width: 960px;
+    border: none;
+    background-color: #ffffff;
+    color: #1f1f1f;
+}
+
+.site-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px 10px;
+}
+
+.site-sidebar {
+    flex: 0 0 220px;
+    position: sticky;
+    top: 40px;
+}
+
+.site-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.sidebar-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.sidebar-role,
+.sidebar-edu {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 14px;
+}
+
+.sidebar-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: gray;
+    font-weight: 700;
+    margin: 18px 0 6px 0;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sidebar-nav .simple-nav-link {
+    font-weight: 600;
+}
+
+.sidebar-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.sidebar-social .img-link {
+    height: 20px;
+}
+
+.sidebar-social a {
+    border-radius: 0;
+}
+
+.sidebar-contact {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.sidebar-globe {
+    margin-top: 18px;
+}
+
+.sidebar-globe #home-globe {
+    width: 160px;
+    height: 160px;
+}
+
+.profile-photo-wrap {
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 190px;
+    border-radius: 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.modern-theme .bio p {
+    margin-bottom: 14px;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.section-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 30px 0 14px 0;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #eee;
+}
+
+.pub-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pub-entry {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dotted #ddd;
+}
+
+.pub-entry:last-child {
+    border-bottom: none;
+}
+
+.review-summary {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 14px;
+}
+
+.review-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.review-entry {
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px dotted #ddd;
+}
+
+.review-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.review-journal {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.review-meta {
+    font-size: 13px;
+    color: #555;
+}
+
+.pub-title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.pub-title a {
+    color: #1f1f1f;
+}
+
+.pub-title a:hover {
+    color: #328eea;
+}
+
+.pub-authors {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 3px;
+}
+
+.pub-me {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.pub-venue {
+    font-size: 13px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.pub-links {
+    display: flex;
+    gap: 8px;
+}
+
+.modern-theme .pub-year-divider {
+    background-color: transparent;
+    border: none;
+    border-left: none;
+    border-bottom: 2px solid #1f1f1f;
+    border-radius: 0;
+    padding: 0 0 4px 0;
+    margin: 24px 0 14px 0;
+    font-size: 13px;
+}
+
+.archive-jump {
+    text-align: center;
+    padding: 10px 0 20px 0;
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .site-layout {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .site-sidebar {
+        position: static;
+        flex: none;
+        width: 100%;
+    }
+}
+
+.modern-theme .navbar a,
+.modern-theme .rank-badge,
+.modern-theme .status-badge,
+.modern-theme .purple-link,
+.modern-theme .blue-link,
+.modern-theme .green-link,
+.modern-theme .red-link,
+.modern-theme .orange-link,
+.modern-theme .gray-link {
+    border-radius: 0;
 }
