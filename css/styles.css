@@ -988,19 +988,35 @@ a.icon-linkedin {
 }
 
 /* ########### Archive ########### */
+body.archive-mode {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 12px;
+}
+
+body.archive-mode .navbar button {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 12px;
+    padding: 6px 10px;
+}
+
+body.archive-mode .navbar-img {
+    height: 18px;
+}
+
 .archive-banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
-    margin: 10px 0 18px 0;
-    font-size: 15px;
+    margin: 10px 0 12px 0;
+    font-size: 12px;
+    font-family: "Poppins", "Segoe UI", sans-serif;
 }
 
 .archive-banner span {
-    padding: 6px 16px;
-    background-color: #6b5b2a;
+    padding: 5px 12px;
+    background-color: #1f3a66;
     color: #fdf6e3;
     border-radius: 3px;
     font-weight: bold;
@@ -1009,11 +1025,11 @@ a.icon-linkedin {
 }
 
 .archive-banner a {
-    padding: 7px 18px;
+    padding: 4px 14px;
     background-color: transparent;
-    border: 2px solid #6b5b2a;
+    border: 1px solid #00594c;
     border-radius: 20px;
-    color: #6b5b2a;
+    color: #00594c;
     font-weight: bold;
     text-decoration: none;
     white-space: nowrap;
@@ -1021,7 +1037,7 @@ a.icon-linkedin {
 }
 
 .archive-banner a:hover {
-    background-color: #6b5b2a;
+    background-color: #00594c;
     color: #fdf6e3;
 }
 
@@ -1070,7 +1086,8 @@ a.icon-linkedin {
     .archive-banner {
         justify-content: center;
         text-align: center;
-        padding: 10px 12px 18px 12px;
+        margin: 10px 0 12px 0;
+        padding: 0 12px;
     }
 }
 
