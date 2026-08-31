@@ -196,22 +196,58 @@ hr {
 }
 
 .navbar a {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    flex: 1;
+    position: relative;
+    flex: 0 0 auto;
+    width: 46px;
+    height: 46px;
     white-space: nowrap;
     cursor: pointer;
-    background-color: #ffffff;
-    border: 1px solid rgb(128, 128, 128);
-    max-width: 100%;
-    border-radius: 23px;
-    padding: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    z-index: 1;
 }
 
 .navbar a:hover {
-    background-color: #f0f0f0;
+    z-index: 5;
+}
+
+.icon-img {
+    flex: 0 0 46px;
+    width: 46px;
+    height: 46px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-label {
+    position: absolute;
+    left: 46px;
+    top: 50%;
+    transform: translate(-6px, -50%);
+    display: inline-flex;
+    align-items: center;
+    height: 34px;
+    padding: 0 12px 0 8px;
+    border-radius: 17px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(72, 72, 72);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.navbar a:hover .icon-label {
+    opacity: 1;
+    transform: translate(0, -50%);
+    pointer-events: auto;
 }
 
 .navbar-img {
@@ -221,7 +257,7 @@ hr {
 }
 
 .img-link {
-    height: 24px;
+    height: 36px;
     vertical-align: middle;
 }
 
@@ -238,31 +274,31 @@ hr {
 }
 
 .social a {
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
-a.icon-scholar {
-    border: 2px solid rgb(102, 163, 255);
+a.icon-scholar:hover {
+    background-color: rgba(102, 163, 255, 0.12);
 }
 
-a.icon-orcid {
-    border: 2px solid rgb(178, 220, 120);
+a.icon-orcid:hover {
+    background-color: rgba(178, 220, 120, 0.15);
 }
 
-a.icon-researchgate {
-    border: 2px solid rgb(102, 220, 200);
+a.icon-researchgate:hover {
+    background-color: rgba(102, 220, 200, 0.15);
 }
 
-a.icon-scopus {
-    border: 2px solid rgb(255, 153, 80);
+a.icon-scopus:hover {
+    background-color: rgba(255, 153, 80, 0.15);
 }
 
-a.icon-github {
-    border: 2px solid rgb(100, 100, 100);
+a.icon-github:hover {
+    background-color: rgba(100, 100, 100, 0.12);
 }
 
-a.icon-linkedin {
-    border: 2px solid rgb(80, 160, 210);
+a.icon-linkedin:hover {
+    background-color: rgba(80, 160, 210, 0.15);
 }
 
 .simple-nav {
@@ -1183,7 +1219,7 @@ body.modern-theme {
 }
 
 .sidebar-social .img-link {
-    height: 20px;
+    height: 36px;
 }
 
 .sidebar-social a {
