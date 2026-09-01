@@ -28,7 +28,7 @@ if (canvas) {
     const sphere = { type: "Sphere" };
 
     const markers = [
-        { name: "US", coordinates: [-90.0715, 29.9511] },
+        { name: "USA", coordinates: [-90.0715, 29.9511] },
         { name: "Bangladesh", coordinates: [90.4125, 23.8103] },
     ];
 
