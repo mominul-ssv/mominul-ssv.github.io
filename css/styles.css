@@ -862,24 +862,6 @@ a.icon-linkedin:hover {
 /* ########### Popup overlay ########### */
 
 /* Add media query for smaller screens */
-@media (min-width: 3840px) {
-    body {
-        width: 15%;
-        margin: 0 auto;
-        transform: scale(3);
-        transform-origin: top center;
-    }
-}
-
-
-@media (min-width: 1920px) {
-    body {
-        width: 30%;
-        margin: 0 auto;
-        transform: scale(2);
-        transform-origin: top center;
-    }
-}
 
 @media (max-width: 1200px) {
     body {
@@ -1169,8 +1151,6 @@ body.modern-theme {
 
 .site-sidebar {
     flex: 0 0 220px;
-    position: sticky;
-    top: 40px;
 }
 
 .site-main {
