@@ -1137,7 +1137,10 @@ body.modern-theme {
     font-family: "Poppins", "Segoe UI", sans-serif;
     width: 90%;
     max-width: 960px;
-    border: none;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #efefef;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #ffffff;
     color: #1f1f1f;
 }
@@ -1158,9 +1161,14 @@ body.modern-theme {
     min-width: 0;
 }
 
+.site-main > :first-child {
+    margin-top: 0;
+}
+
 .sidebar-name {
     font-size: 1.5rem;
     font-weight: 700;
+    margin-top: 0;
     margin-bottom: 8px;
     line-height: 1.2;
 }
@@ -1348,6 +1356,15 @@ body.modern-theme {
     padding: 10px 0 20px 0;
     font-family: "Source Code Pro", sans-serif;
     font-size: 13px;
+}
+
+@media (max-width: 1024px) {
+    body.modern-theme {
+        border-left: none;
+        border-right: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 768px) {
