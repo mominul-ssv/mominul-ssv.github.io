@@ -1236,7 +1236,7 @@ body.modern-theme {
 .profile-photo {
     width: 190px;
     border-radius: 0;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    border: 2px solid #efefef;
 }
 
 .modern-theme .bio p {
@@ -1396,4 +1396,297 @@ body.modern-theme {
 .modern-theme .orange-link,
 .modern-theme .gray-link {
     border-radius: 0;
+}
+
+/* ########### Dark Mode ########### */
+
+.theme-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1.5px solid #d0d0d0;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    padding: 0;
+    transition: background 0.2s, border-color 0.2s;
+    color: #1f1f1f;
+}
+
+.theme-toggle:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: flex; }
+
+html.dark-mode {
+    background-color: #0d1117;
+}
+
+html.dark-mode body.modern-theme {
+    background-color: #161b22;
+    color: #c9d1d9;
+    border-left-color: #21262d;
+    border-right-color: #21262d;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+html.dark-mode body.modern-theme .theme-toggle {
+    border-color: #30363d;
+    color: #e6edf3;
+}
+
+html.dark-mode body.modern-theme .theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+html.dark-mode body.modern-theme .theme-toggle .icon-moon { display: none; }
+html.dark-mode body.modern-theme .theme-toggle .icon-sun  { display: flex; }
+
+html.dark-mode body.modern-theme .sidebar-name {
+    color: #f0f6fc;
+}
+
+html.dark-mode body.modern-theme .sidebar-role,
+html.dark-mode body.modern-theme .sidebar-edu {
+    color: #8b949e;
+}
+
+html.dark-mode body.modern-theme .sidebar-label {
+    color: #6e7681;
+}
+
+html.dark-mode body.modern-theme .sidebar-contact {
+    color: #8b949e;
+}
+
+html.dark-mode body.modern-theme .simple-nav-link {
+    color: #c9d1d9;
+}
+
+html.dark-mode body.modern-theme .simple-nav-link:hover {
+    color: #58a6ff;
+}
+
+html.dark-mode body.modern-theme .simple-nav-link.active {
+    color: #58a6ff;
+    border-bottom-color: #58a6ff;
+}
+
+html.dark-mode body.modern-theme .icon-label {
+    background-color: #21262d;
+    color: #c9d1d9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+html.dark-mode body.modern-theme .profile-photo {
+    border-color: #30363d;
+}
+
+html.dark-mode body.modern-theme .section-heading {
+    color: #f0f6fc;
+    border-bottom-color: #30363d;
+}
+
+html.dark-mode body.modern-theme .pub-title a {
+    color: #c9d1d9;
+}
+
+html.dark-mode body.modern-theme .pub-title a:hover {
+    color: #58a6ff;
+}
+
+html.dark-mode body.modern-theme .pub-authors {
+    color: #8b949e;
+}
+
+html.dark-mode body.modern-theme .pub-me {
+    color: #c9d1d9;
+}
+
+html.dark-mode body.modern-theme .pub-venue {
+    color: #8b949e;
+}
+
+html.dark-mode body.modern-theme .pub-entry {
+    border-bottom-color: #21262d;
+}
+
+html.dark-mode body.modern-theme .review-journal {
+    color: #e6edf3;
+}
+
+html.dark-mode body.modern-theme .review-summary,
+html.dark-mode body.modern-theme .review-meta {
+    color: #8b949e;
+}
+
+html.dark-mode body.modern-theme .review-entry {
+    border-bottom-color: #21262d;
+}
+
+html.dark-mode body.modern-theme .home-pub-more a {
+    color: #58a6ff;
+}
+
+html.dark-mode body.modern-theme .footer {
+    color: #6e7681;
+}
+
+html.dark-mode body.modern-theme .footer a {
+    color: #58a6ff;
+}
+
+html.dark-mode body.modern-theme a {
+    color: #58a6ff;
+}
+
+html.dark-mode body.modern-theme .bio p {
+    color: #c9d1d9;
+}
+
+html.dark-mode body.modern-theme .pub-year-divider {
+    border-bottom-color: #30363d;
+    color: #8b949e;
+}
+
+html.dark-mode body.modern-theme a.icon-github .img-link {
+    filter: invert(1);
+}
+
+/* ===== Archive banner right group ===== */
+.archive-banner-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.archive-theme-toggle {
+    border-radius: 20px;
+    border: 1px solid #00594c;
+    background: transparent;
+    color: #00594c;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    flex-shrink: 0;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.archive-theme-toggle:hover {
+    background-color: #00594c;
+    color: #fdf6e3;
+}
+
+.archive-theme-toggle .icon-sun { display: none; }
+.archive-theme-toggle .icon-moon { display: flex; }
+
+/* ===== Dark mode: archive pages ===== */
+html.dark-mode body.archive-mode {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    border-left-color: #21262d;
+    border-right-color: #21262d;
+}
+
+html.dark-mode body.archive-mode .card-body {
+    background-color: #161b22;
+    border-color: #30363d;
+    color: #c9d1d9;
+}
+
+html.dark-mode body.archive-mode .book-author,
+html.dark-mode body.archive-mode .archive-subtitle {
+    color: #8b949e;
+}
+
+html.dark-mode body.archive-mode .hr-notes,
+html.dark-mode body.archive-mode .hr-notes-mid {
+    border-color: #30363d;
+}
+
+html.dark-mode body.archive-mode .navbar button {
+    background-color: #161b22;
+    color: #c9d1d9;
+    border-color: #30363d;
+    box-shadow: none;
+}
+
+html.dark-mode body.archive-mode .navbar button:hover {
+    background-color: #21262d;
+}
+
+html.dark-mode body.archive-mode .navbar button.active {
+    background-color: #388bfd;
+    color: #ffffff;
+    border-color: #388bfd;
+}
+
+html.dark-mode body.archive-mode .navbar button.active:hover {
+    background-color: #388bfd;
+}
+
+html.dark-mode body.archive-mode a {
+    color: #58a6ff;
+}
+
+html.dark-mode body.archive-mode .archive-link-card p {
+    color: #8b949e;
+}
+
+html.dark-mode body.archive-mode .archive-link-card:hover {
+    background-color: #1f2937;
+    border-color: #388bfd;
+}
+
+html.dark-mode .archive-banner a {
+    color: #58a6ff;
+    border-color: #58a6ff;
+}
+
+html.dark-mode .archive-banner a:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+}
+
+html.dark-mode body.archive-mode .archive-theme-toggle {
+    border-color: #58a6ff;
+    color: #c9d1d9;
+}
+
+html.dark-mode body.archive-mode .archive-theme-toggle:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+}
+
+html.dark-mode body.archive-mode .archive-theme-toggle .icon-moon { display: none; }
+html.dark-mode body.archive-mode .archive-theme-toggle .icon-sun { display: flex; }
+
+html.dark-mode body.archive-mode .img-projects div {
+    border-color: #30363d;
+}
+
+html.dark-mode body.archive-mode .h3-projects {
+    border-color: #30363d;
+}
+
+html.dark-mode body.archive-mode .card-border {
+    border-color: #30363d;
+}
+
+html.dark-mode body.archive-mode .footer {
+    color: #6e7681;
+}
+
+html.dark-mode body.archive-mode .footer a {
+    color: #58a6ff;
 }
