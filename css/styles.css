@@ -1032,15 +1032,23 @@ body.archive-mode .navbar-img {
     font-family: "Poppins", "Segoe UI", sans-serif;
 }
 
-.archive-banner span {
-    padding: 5px 12px;
+.archive-badge {
+    padding: 4px 8px;
     background-color: #1f3a66;
     color: #fdf6e3;
     border-radius: 3px;
     font-weight: bold;
+    font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid transparent;
 }
+
+.archive-badge-icon { display: flex; flex-shrink: 0; }
+.archive-badge-text { display: inline; }
 
 .archive-banner a {
     padding: 4px 14px;
@@ -1102,11 +1110,11 @@ body.archive-mode .navbar-img {
 
 @media (max-width: 768px) {
     .archive-banner {
-        justify-content: center;
-        text-align: center;
-        margin: 10px 0 12px 0;
         padding: 0 12px;
     }
+
+    .archive-badge-text { display: none !important; }
+    .archive-badge { gap: 0; }
 }
 
 /* ########### Back in Time button ########### */
