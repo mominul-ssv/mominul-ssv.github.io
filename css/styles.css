@@ -1565,7 +1565,7 @@ html.dark-mode body.modern-theme a.icon-github .img-link {
 .archive-banner-right {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
 }
 
 .archive-theme-toggle {
