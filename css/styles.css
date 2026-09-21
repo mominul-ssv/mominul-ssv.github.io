@@ -1306,6 +1306,14 @@ body.modern-theme {
     margin-bottom: 3px;
 }
 
+.review-journal a {
+    color: inherit;
+}
+
+.review-journal a:hover {
+    color: #0268ce;
+}
+
 .review-meta {
     font-size: 13px;
     color: #555;
@@ -1529,6 +1537,14 @@ html.dark-mode body.modern-theme .pub-entry {
 
 html.dark-mode body.modern-theme .review-journal {
     color: #e6edf3;
+}
+
+html.dark-mode body.modern-theme .review-journal a {
+    color: inherit;
+}
+
+html.dark-mode body.modern-theme .review-journal a:hover {
+    color: #58a6ff;
 }
 
 html.dark-mode body.modern-theme .review-summary,
