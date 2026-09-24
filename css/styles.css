@@ -714,6 +714,43 @@ a.icon-linkedin:hover {
     color: #6d6d6d;
 }
 
+.status-badge.status-accepted {
+    border-color: #2da44e;
+    color: #2da44e;
+}
+
+/* ########### News ########### */
+
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+}
+
+.news-entry {
+    display: flex;
+    gap: 12px;
+    padding: 6px 0;
+    border-bottom: 1px solid #efefef;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.news-entry:last-child {
+    border-bottom: none;
+}
+
+.news-date {
+    flex-shrink: 0;
+    font-weight: 600;
+    color: #555;
+    min-width: 90px;
+}
+
+.news-text {
+    color: #333;
+}
+
 /* ########### Publications ########### */
 
 /* ########### Projects ########### */
@@ -1553,6 +1590,18 @@ html.dark-mode body.modern-theme .review-meta {
 }
 
 html.dark-mode body.modern-theme .review-entry {
+    border-bottom-color: #21262d;
+}
+
+html.dark-mode body.modern-theme .news-date {
+    color: #8b949e;
+}
+
+html.dark-mode body.modern-theme .news-text {
+    color: #c9d1d9;
+}
+
+html.dark-mode body.modern-theme .news-entry {
     border-bottom-color: #21262d;
 }
 
