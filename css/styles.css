@@ -1413,6 +1413,7 @@ body.modern-theme {
 
 @media (max-width: 1024px) {
     body.modern-theme {
+        width: 90%;
         border-left: none;
         border-right: none;
         padding-left: 0;
