@@ -1180,8 +1180,8 @@ body.archive-mode .navbar-img {
 /* ########### Modern Academic Theme (current site) ########### */
 body.modern-theme {
     font-family: "Poppins", "Segoe UI", sans-serif;
-    width: 90%;
-    max-width: 960px;
+    width: 60%;
+    max-width: none;
     border-left: 2px solid #efefef;
     border-right: 2px solid #efefef;
     padding-left: 20px;
